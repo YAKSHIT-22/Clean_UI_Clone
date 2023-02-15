@@ -192,3 +192,8 @@ body {
 		@apply font-popp
 	}
 }
+
+.swiper-wrapper{
+	display:flex;
+	align-items:center;
+}
