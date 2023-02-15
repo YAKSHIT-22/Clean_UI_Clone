@@ -27,6 +27,9 @@ import product from "../assets/product.svg";
 import software from "../assets/software.svg";
 import { Link } from "react-router-dom";
 import arrow from "../assets/arrowright.svg";
+import wsp from '../assets/Portfolio/wsps.png'
+import PortfolioSection from "../components/LandingCompo/PortfolioSection";
+
 
 export default function LandingPage() {
   const images = [
@@ -68,7 +71,7 @@ export default function LandingPage() {
             />
           }
         />
-        <section className="w-screen h-full lg:h-screen">
+        <section className="w-screen h-full">
           <div className="flex items-center justify-center w-full h-full">
             <div className="flex items-center justify-center w-full h-full flex-col gap-6">
               <div className="flex items-center justify-center flex-col">
@@ -143,9 +146,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="w-screen h-screen">
-
-        </section>
+         <PortfolioSection img={wsp} heading={"WSPS"} subtitle={"Designed and Developed for Workplace Safety and Prevention Services. This app saves lives, and helps prevent the spread of COVID 19, by providing the most reliable and up to date information needed by Employers across Ontario, Canada."}/>
       </main>
     </>
   );

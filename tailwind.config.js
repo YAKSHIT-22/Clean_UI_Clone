@@ -33,6 +33,9 @@ module.exports = {
 			  },
 			height: {
 				'128': '32rem',
+			  },
+			  backgroundImage: {
+				'wsps': "url('./assets/bg-wsps.svg')",
 			  }
 			
 		},
