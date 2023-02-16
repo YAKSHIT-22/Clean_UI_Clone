@@ -12,7 +12,7 @@ export default function HeroPage({headFirst="", headSecond="", headThird="",subt
              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%]">
               <p className="font-semibold text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">{subtitle}</p>
              </div>
-             <div className="flex items-center justify-center gap-2 w-full lg:w-[75%]  h-full">
+             <div className="flex items-center justify-center gap-2 w-full xl:w-[75%] h-full">
               {button1}
               {button2}
             </div>
