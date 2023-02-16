@@ -161,12 +161,12 @@ export default function LandingPage() {
         <PortfolioSection img={wsp} heading={"WSPS"} subtitle={"Designed and Developed for Workplace Safety and Prevention Services. This app saves lives, and helps prevent the spread of COVID 19, by providing the most reliable and up to date information needed by Employers across Ontario, Canada."}/>
        <section className="w-screen h-full">
             <div className="flex items-center justify-center gap-4 my-4">
-              <div className="flex items-center justify-center gap-4 flex-col my-4 p-2">
+              <div className="flex items-center justify-center gap-4 flex-col my-4">
               <div className="flex items-center justify-center gap-4 h-full w-full sm:w-[70%] lg:w-[65%] p-4">
              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-[2.5rem] font-bold xl:leading-[3.6rem] text-center">Benefits of Choosing<span className="text-[#8873ef]"> Our Application Development</span> Agency</h1>
              </div>
-             <div className="flex items-center justify-center gap-4 w-full sm:w-[85%] lg:w-[75%] p-3">
-             <p className="font-semibold text-[#787D89] leading-loose md:leading-[2rem] text-center text-xs sm:text-sm ">At , we focus on delivering world-class quality and bespoke application development solutions that expand your reach, improve your customer engagement, and take your business to the next level. We develop one-of-a-kind web and mobile applications for businesses of all sizes by harnessing the power of disruptive technologies.</p>
+             <div className="flex items-center justify-center gap-4 w-full sm:w-[85%] lg:w-[75%] p-4">
+             <p className="font-medium text-[#787D89] leading-loose md:leading-[2rem] text-center text-xs sm:text-sm">At , we focus on delivering world-class quality and bespoke application development solutions that expand your reach, improve your customer engagement, and take your business to the next level. We develop one-of-a-kind web and mobile applications for businesses of all sizes by harnessing the power of disruptive technologies.</p>
              </div>
              <div className="flex justify-center items-center gap-4 h-full">
              <div className="flex items-center justify-center w-screen sm:p-4 z-[-1]">
@@ -175,7 +175,7 @@ export default function LandingPage() {
       slidesPerView={5}
       spaceBetween={50}
       className="!px-4"
-      // autoplay={{ delay: 4000 }}
+      autoplay={{ delay: 4000 }}
       breakpoints={{
         300:{
           slidesPerView: 1,
@@ -187,20 +187,20 @@ export default function LandingPage() {
         },
         768: {
           slidesPerView: 2,
-          spaceBetween: 40,
+          spaceBetween: 20,
         },
         1024: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
       }}
     >
     <SwiperSlide><div className="flex items-center justify-center bg-white rounded-md p-2 border border-slate-300">
-       <div className="flex items-start justify-center flex-col p-4 lg:p-8 gap-4 h-96 sm:h-80">
+       <div className="flex items-start justify-center flex-col p-6 sm:p-8 gap-4 sm:h-96">
            <div>
             <img src={addictive} alt="speed" className="w-[50px] h-[50px]"/>
            </div>
-           <div className="flex items-center justify-start w-[90%] md:w-[75%] 2xl:w-[50%]">
+           <div className="flex items-center justify-start w-full">
            <h1 className="text-lg xs:text-xl  font-medium">We Listen & Then Interpret</h1>
            </div>
            <div className="flex items-center justify-start w-full">
@@ -209,24 +209,24 @@ export default function LandingPage() {
        </div>
       </div></SwiperSlide>
     <SwiperSlide><div className="flex items-center justify-center bg-white rounded-md p-2 border border-slate-300">
-    <div className="flex items-start justify-center flex-col p-4 lg:p-8 gap-4 h-96 sm:h-80">
+    <div className="flex items-start justify-center flex-col p-6 sm:p-8 gap-4 sm:h-96">
     <div>
             <img src={engaging} alt="speed" className="w-[50px] h-[50px]"/>
            </div>
-           <div className="flex items-center justify-start w-full ">
+           <div className="flex items-center justify-start w-full">
            <h1 className="text-lg xs:text-xl  font-medium">We Deliver On Time and within Budget</h1>
            </div>
-           <div className="flex items-center justify-start w-full ">
+           <div className="flex items-center justify-start w-full">
              <p className="font-medium text-[#787D89] leading-loose md:leading-[1.5rem] text-xs">We have the brightest minds working at our app development company in Toronto. Our developers have expertise in coding a mobile app or creating a marketing campaign. We work smart, fast and deliver projects on time and under your budget.</p>
              </div>
 </div>
       </div></SwiperSlide>
     <SwiperSlide><div className="flex items-center justify-center bg-white rounded-md p-2 border border-slate-300">
-    <div className="flex items-start justify-center flex-col p-4 lg:p-8 gap-4 h-96 sm:h-80">
+    <div className="flex items-start justify-center flex-col p-6 sm:p-8 gap-4 sm:h-96">
     <div>
             <img src={feature} alt="speed" className="w-[50px] h-[50px]"/>
            </div>
-           <div className="flex items-center justify-start w-full ">
+           <div className="flex items-center justify-start w-full">
            <h1 className="text-lg xs:text-xl font-medium">We Have a Process Driven Team</h1>
            </div>
            <div className="flex items-center justify-center w-full">
@@ -237,15 +237,15 @@ export default function LandingPage() {
 </div>
       </div></SwiperSlide>
     <SwiperSlide><div className="flex items-center justify-center bg-white rounded-md p-2 border border-slate-300">
-    <div className="flex items-start justify-center flex-col p-4 lg:p-8 gap-4 h-96 sm:h-80">
+    <div className="flex items-start justify-center flex-col p-6 sm:p-8 gap-4 sm:h-96">
     <div>
             <img src={attractive} alt="speed" className="w-[50px] h-[50px]"/>
            </div>
-           <div className="flex items-center justify-start ">
+           <div className="flex items-center justify-start w-full">
            <h1 className="text-lg  font-medium">We Focus on Your Profitability & Scalability</h1>
            </div>
            <div className="flex items-center justify-start w-full">
-             <p className="font-medium text-[#787D89] leading-loose md:leading-[1.5rem] text-xs">We are, an industry leading app development company, brings together North America's top engineering and business talent under one roof. These innovative minds are on a sole mission - Build scalable solutions for your business that drive profitability.</p>
+             <p className="font-medium text-[#787D89] leading-loose md:leading-[1.5rem] text-xs">We are, an industry leading app development company, brings together North America's top engineering and business talent under one roof. These innovative minds are on a sole mission to build scalable solutions for your business that drive profitability.</p>
              </div>
 </div>
       </div></SwiperSlide>
