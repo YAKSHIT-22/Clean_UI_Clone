@@ -118,8 +118,8 @@ export default function Header(){
 
   return (
     <React.Fragment>
-      <header className="bg-white z-[1302]">
-        <nav className="fixed w-screen xl:px-6 px-4 py-4 flex justify-between bg-white items-center transition duration-200 ease-in-out border-b-2 border-slate-200">
+      <header className="bg-white z-50 fixed">
+        <nav className="w-screen xl:px-6 px-4 py-4 flex justify-between bg-white items-center transition duration-200 ease-in-out border-b-2 border-slate-200">
         <NavLink
                 to="/"
                 style={({ isActive }) => ({

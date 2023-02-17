@@ -36,6 +36,9 @@ module.exports = {
 			  },
 			  backgroundImage: {
 				'wsps': "url('./assets/bg-wsps.svg')",
+				'mind' : "url('./assets/bg-mind.svg')",
+				'background': "url('./assets/bg.png')",
+				'settlyt': "url('./assets/settlyt.svg')",
 			  }
 			
 		},
