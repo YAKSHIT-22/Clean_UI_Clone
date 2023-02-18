@@ -43,11 +43,10 @@ import feature from "../assets/feature-rich.png";
 import attractive from "../assets/Attractive.png";
 import mind from "../assets/Portfolio/mindset.png";
 import expertise from "../assets/Expertise.svg";
-import appDev from '../assets/digitalLandscape/app-development-company.png'
-import mobileDev from '../assets/digitalLandscape/mobile-application-development-services.png'
-import digiMob from '../assets/digitalLandscape/digital-mobile-agency.jpg';
-import setlyt from '../assets/Portfolio/settlyt.png';
-
+import appDev from "../assets/digitalLandscape/app-development-company.png";
+import mobileDev from "../assets/digitalLandscape/mobile-application-development-services.png";
+import digiMob from "../assets/digitalLandscape/digital-mobile-agency.jpg";
+import setlyt from "../assets/Portfolio/settlyt.png";
 
 export default function LandingPage() {
   const images = [
@@ -403,11 +402,8 @@ export default function LandingPage() {
               <div className="flex items-start justify-center flex-col gap-4 p-2 md:p-4 w-full md:w-1/2">
                 <div className="flex items-center justify-center h-full">
                   <h1 className="text-3xl lg:text-4xl xl:text-[2.7rem] font-bold xl:leading-[3.6rem]">
-                  We Are Transforming the
-                    <span className="text-[#8873ef]">
-                      {" "}
-                      Digital Landscape
-                    </span>
+                    We Are Transforming the
+                    <span className="text-[#8873ef]"> Digital Landscape</span>
                   </h1>
                 </div>
                 <div className="flex items-center justify-center gap-4 w-full  h-full sm:w-[80%] md:w-[90%]">
@@ -418,8 +414,11 @@ export default function LandingPage() {
                     development services blended with creativity engender
                     unbeatable results. Our mobile application development
                     agency encompasses a deft team with hands-on experience in
-                    providing <span className="text-[#8873ef]">cross-platform app development</span> services while
-                    focusing on SEO, accessibility and security.
+                    providing{" "}
+                    <span className="text-[#8873ef]">
+                      cross-platform app development
+                    </span>{" "}
+                    services while focusing on SEO, accessibility and security.
                   </p>
                 </div>
                 <Link className="flex items-center justify-start gap-2 flex-row w-full xs:w-[75%] lg:w-[50%] text-[#8873ef]">
@@ -432,17 +431,20 @@ export default function LandingPage() {
               <div className="flex items-center justify-center w-full md:w-1/2 h-full">
                 <div className="flex items-center justify-center w-full flex-row gap-2 xs:gap-4 p-1 xs:p-2">
                   <div className="flex items-center justify-center flex-col w-[50%] md:w-[55%] gap-2 sm:gap-4">
-                  <div className="flex items-center justify-center">
-                  <img src={mobileDev} alt="mobileDev" className="h-[100%]"/>
-                  </div>
-                  <div className="flex items-center justify-center">
-                    <img src={appDev} alt="appDev" className="w-[100%]"/>
-                  </div>
+                    <div className="flex items-center justify-center">
+                      <img
+                        src={mobileDev}
+                        alt="mobileDev"
+                        className="h-[100%]"
+                      />
+                    </div>
+                    <div className="flex items-center justify-center">
+                      <img src={appDev} alt="appDev" className="w-[100%]" />
+                    </div>
                   </div>
                   <div className="flex items-center justify-end w-[50%] md:w-[55%]">
-                  <img src={digiMob} alt="digiMob" className="h-[100%]"/>
+                    <img src={digiMob} alt="digiMob" className="h-[100%]" />
                   </div>
-                  
                 </div>
               </div>
             </div>
