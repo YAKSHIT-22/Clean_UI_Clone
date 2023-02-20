@@ -50,7 +50,7 @@ import setlyt from "../assets/Portfolio/settlyt.png";
 import mobile from "../assets/webest/mobile.png";
 import nlp from "../assets/webest/nlp.jpg";
 import prod from "../assets/webest/product.png";
-import strategy from "../assets/webest/Strategy.jpg";
+import strategy from "../assets/webest/strategy.jpg";
 import web from "../assets/webest/web.png";
 import best from '../assets/webest/best.svg';
 import alphamatch from '../assets/Portfolio/alphamatch.png';
