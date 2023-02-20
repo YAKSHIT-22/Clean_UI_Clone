@@ -53,6 +53,7 @@ import prod from "../assets/webest/product.png";
 import strategy from "../assets/webest/strategy.jpg";
 import web from "../assets/webest/web.png";
 import best from '../assets/webest/best.svg';
+import alphamatch from '../assets/Portfolio/alphamatch.png';
 
 export default function LandingPage() {
   const images = [
@@ -471,7 +472,7 @@ export default function LandingPage() {
           <div className="flex items-center justify-center flex-col gap-4 p-2 my-12">
             <div className="w-full flex items-center justify-center gap-2">
               <h1 className="text-gray-800 text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem]">
-                We Are <span className="text-[#8873ef]"> Best</span> At
+                We Are<span className="text-[#8873ef]"> Best</span> At
               </h1>
             </div>
             <div className="flex justify-center items-center w-full">
@@ -690,6 +691,25 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
+        <section className="w-screen h-screen">
+          <div className="flex items-center justify-center w-full h-full flex-col">
+            <div><h1 className="text-gray-800 text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem]">Customer<span className="text-[#8873ef]"> Reviews</span></h1></div>
+            <div className="flex items-center justify-center w-full h-full">
+               
+            </div>
+          </div>
+        </section>
+        <PortfolioSection
+          img={alphamatch}
+          bgClass={"bg-alpha"}
+          heading={"Alpha Match"}
+          imgClass={
+            "h-[60%] sm:h-[70%]  md:h-[40rem] lg:h-[56rem] xl:h-[70rem] bottom-[-4] right-0 md:absolute"
+          }
+          subtitle={
+            "Alpha Match allows you to search, post, and promote pet listings, services, and products. We developed this platform to allow consumers to search for their pet-related services, products or events both locally and abroad."
+          }
+        />
       </main>
     </>
   );

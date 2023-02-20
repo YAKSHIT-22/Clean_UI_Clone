@@ -39,6 +39,7 @@ module.exports = {
 				'mind' : "url('./assets/bg-mind.svg')",
 				'background': "url('./assets/bg.png')",
 				'settlyt': "url('./assets/settlyt.svg')",
+				'alpha':"url('./assets/bgalpha.png')",
 			  }
 			
 		},
