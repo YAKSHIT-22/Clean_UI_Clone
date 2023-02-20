@@ -50,10 +50,17 @@ import setlyt from "../assets/Portfolio/settlyt.png";
 import mobile from "../assets/webest/mobile.png";
 import nlp from "../assets/webest/nlp.jpg";
 import prod from "../assets/webest/product.png";
-import strategy from "../assets/webest/strategy.jpg";
+import strategy from "../assets/webest/Strategy.jpg";
 import web from "../assets/webest/web.png";
 import best from '../assets/webest/best.svg';
 import alphamatch from '../assets/Portfolio/alphamatch.png';
+import thatsgame from '../assets/Portfolio/thatsgame.png';
+import ideal from '../assets/Portfolio/idealprotein.png';
+import max from '../assets/Portfolio/maxsold.png';
+import CustomerResponse from "../components/CustomerResponse";
+
+
+
 
 export default function LandingPage() {
   const images = [
@@ -79,7 +86,7 @@ export default function LandingPage() {
   SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <>
-      <main className="bg-white">
+      <main>
         <HeroPage
           headFirst={"An Innovative"}
           headSecond={"Mobile App Development"}
@@ -546,7 +553,7 @@ export default function LandingPage() {
                               <img
                                 src={mobile}
                                 alt="hero"
-                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                                className="lg:h-[90%] h-[65%] sm:h-[80%] rounded-lg"
                               />
                             </div>
                             <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
@@ -581,7 +588,7 @@ export default function LandingPage() {
                               <img
                                 src={web}
                                 alt="hero"
-                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                                className="lg:h-[90%] h-[65%] sm:h-[80%] rounded-lg"
                               />
                             </div>
                             <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
@@ -616,7 +623,7 @@ export default function LandingPage() {
                               <img
                                 src={prod}
                                 alt="hero"
-                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                                className="lg:h-[90%] h-[65%] sm:h-[80%] rounded-lg"
                               />
                             </div>
                             <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
@@ -651,7 +658,7 @@ export default function LandingPage() {
                               <img
                                 src={strategy}
                                 alt="hero"
-                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg border"
+                                className="lg:h-[90%] h-[65%] sm:h-[80%] rounded-lg border"
                               />
                             </div>
                             <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
@@ -686,19 +693,12 @@ export default function LandingPage() {
               <img
                 src={best}
                 alt="background"
-                className="top-0 right-0 left-0 bottom-0 rotate-90  w-[75%] sm:h-full lg:w-[50%] xl:w-[44%] 2xl:w-[36%]"
+                className="top-0 right-0 left-0 bottom-0 rotate-90  w-[60%] sm:h-full lg:w-[50%] xl:w-[44%] 2xl:w-[36%]"
               />
             </div>
           </div>
         </section>
-        <section className="w-screen h-screen">
-          <div className="flex items-center justify-center w-full h-full flex-col">
-            <div><h1 className="text-gray-800 text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem]">Customer<span className="text-[#8873ef]"> Reviews</span></h1></div>
-            <div className="flex items-center justify-center w-full h-full">
-               
-            </div>
-          </div>
-        </section>
+        <CustomerResponse img={best}/>
         <PortfolioSection
           img={alphamatch}
           bgClass={"bg-alpha"}
@@ -710,6 +710,162 @@ export default function LandingPage() {
             "Alpha Match allows you to search, post, and promote pet listings, services, and products. We developed this platform to allow consumers to search for their pet-related services, products or events both locally and abroad."
           }
         />
+        <section className="w-screen h-full relative">
+        <div className="flex justify-center items-center my-6">
+                <div className="flex items-center justify-center flex-col-reverse md:flex-row lg:gap-4 p-4 lg:my-4">
+                  <div className="flex items-center justify-center w-full md:w-[50%] p-2 h-full">
+                    <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full xl:w-[65%]  flex-col">
+                      <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                        <div className="p-4 flex items-center mr-4 justify-center bg-white border rounded-lg">
+                          {" "}
+                          <img
+                            src={sap}
+                            alt="sap"
+                            className="h-12"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex items-start justify-center flex-col  justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6 sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                        <div className="p-4 flex items-center ml-4 justify-center bg-white border rounded-lg">
+                          <img
+                            src={roku}
+                            alt="roku"
+                            className="h-12"
+                          />
+                        </div>
+                        
+                      </div>
+
+                      <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4 md:my-0">
+                        <div className="p-4 flex items-center justify-center mb-1 mt-4 ml-5 bg-white border rounded-lg">
+                          {" "}
+                          <img
+                            src={braze}
+                            alt="braze"
+                            className="h-12"
+                          />
+                        </div>
+                        
+                      </div>
+                      <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1  px-3 xs:px-4 md:my-0">
+                        <div className="p-4 flex items-center mt-2 mr-4 justify-center bg-white border rounded-lg">
+                          {" "}
+                          <img
+                            src={alpha}
+                            alt="alpha"
+                            className="h-12"
+                          />
+                        </div>
+                        
+                      </div>
+                      <div className="flex items-start justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                        <div className="p-4 flex items-center mb-2 ml-4 justify-center bg-white border rounded-md">
+                          {" "}
+                          <img
+                            src={aws}
+                            alt="aws"
+                            className="h-12"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                        <div className="p-4 flex items-center justify-center bg-white border rounded-lg">
+                          {" "}
+                          <img
+                            src={dotcms}
+                            alt="dotcms"
+                            className="h-12"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start justify-center flex-col gap-4 p-2 md:p-4 w-full md:w-[50%]">
+                    <div className="flex items-center justify-center gap-4 h-full">
+                      <h1 className="text-3xl lg:text-4xl xl:text-[2.5rem] font-bold xl:leading-[3.6rem] text-[#8873ef]">
+                      We Partner
+                        <span className="text-gray-800">
+                          {" "}
+                          the Technology Companies
+                        </span>
+                      </h1>
+                    </div>
+                    <div className="flex items-center justify-center gap-4 w-full  h-full sm:w-[80%] md:w-[90%]">
+                      <p className="font-medium text-[#67718a] leading-[1.6rem] text-sm md:text-[1rem]">
+                      We has partnered with many top-notch technology companies and delivered unparalleled application development solutions to upscale their business. We are incredibly lucky to work with a variety of tech industries to create outstanding digital solutions for your business. From mobile game development to AI-based hospital app development, we offer a wide range of services under one roof. That’s why we have become the most sought-destination for application development in Toronto.
+                      </p>
+                    </div>
+                    <Link className="flex items-center justify-start gap-2 flex-row w-full text-[#8873ef]">
+                      <p>Show all services</p>
+                      <img src={arrow} alt="arrow" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center absolute gap-2 p-2 top-6 right-0 left-0 bottom-0 z-[-1] w-screen h-full">
+            <div className="w-screen flex items-center justify-center p-2">
+              <img
+                src={best}
+                alt="background"
+                className="top-0 right-0 left-0 bottom-0 sm:rotate-90  w-[75%] sm:h-full md:w-[50%] xl:w-[44%] 2xl:w-[36%]"
+              />
+            </div>
+          </div>
+        </section>
+        <PortfolioSection
+          img={thatsgame}
+          bgClass={"bg-thatsgame"}
+          heading={"ThatsGame"}
+          imgClass={
+            "h-[60%] sm:h-[70%]  md:h-[30rem] lg:h-[36rem] xl:h-[50rem] bottom-[-4] right-0 md:absolute"
+          }
+          subtitle={
+            "ThatsGame is a mentoring platform that connects young basketball athletes with professional mentors. We developed this app to elevate future athletes with comprehensive knowledge from sports experts."
+          }
+        />
+        <section className="w-screen h-screen">
+          
+          <div className="flex items-center justify-center gap-4 p-2 bg-background1">
+            <div className="flex items-center justify-center gap-4 p-2 flex-col my-8">
+                   <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
+                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[2rem] font-medium xl:leading-[3.6rem] text-center">Powering Innovation across verticals, by collaborating with Startups, Enterprises and the world's Leading Brands</h1>
+                   </div>
+                   <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
+                    <p className="text-lg font-normal leading-[2rem] text-center text-[#636d86]">Being a mobile application development agency, we deeply understand your business needs and then search perfect solutions to match it. We are adept at offering result-oriented mobile app development services in the domain from the last many years.</p>
+                   </div>
+                   <div className="flex items-center justify-center gap-4  flex-col">
+                         
+                   </div>
+            </div>
+          </div>
+
+        </section>
+        <PortfolioSection
+          img={ideal}
+          bgClass={"bg-ideal"}
+          heading={"Ideal Protein"}
+          imgClass={
+            "h-[60%] sm:h-[70%] md:h-[36rem] lg:h-[56rem] xl:h-[64rem] bottom-[-4] right-0 md:absolute"
+          }
+          subtitle={
+            "Ideal Protein has aided several fitness enthusiasts to spruce up their lifestyles. Assist your target audience with high-end fitness apps by availing our mobile application development services now."
+          }
+        />
+        <div className="my-20"></div>
+        <PortfolioSection
+          img={max}
+          bgClass={"bg-maxsold"}
+          heading={"Maxsold"}
+          imgClass={
+            "h-[60%] sm:h-[70%] md:h-[40rem] lg:h-[56rem] xl:h-[70rem] bottom-[-4] right-0 md:absolute"
+          }
+          subtitle={
+            "We created Maxsold to aid sellers with an efficient catalog app. It accommodates all activities like downsizing sale, estate sale, relocation sale or business liquidation under one head."
+          }
+        />
+        <section className="w-screen h-screen">
+
+        </section>
       </main>
     </>
   );

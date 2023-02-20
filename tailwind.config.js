@@ -40,6 +40,10 @@ module.exports = {
 				'background': "url('./assets/bg.png')",
 				'settlyt': "url('./assets/settlyt.svg')",
 				'alpha':"url('./assets/bgalpha.png')",
+				'thatsgame':"url('./assets/thatsgame.svg')",
+				'background1':"url('./assets/background1.svg')",
+				'ideal':"url('./assets/ideal.png')",
+				'maxsold':"url('./assets/maxsold.png')",
 			  }
 			
 		},
