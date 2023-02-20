@@ -79,7 +79,7 @@ export default function LandingPage() {
   SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <>
-      <main>
+      <main className="bg-white">
         <HeroPage
           headFirst={"An Innovative"}
           headSecond={"Mobile App Development"}
