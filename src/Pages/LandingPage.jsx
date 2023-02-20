@@ -58,7 +58,9 @@ import thatsgame from '../assets/Portfolio/thatsgame.png';
 import ideal from '../assets/Portfolio/idealprotein.png';
 import max from '../assets/Portfolio/maxsold.png';
 import CustomerResponse from "../components/CustomerResponse";
-
+import description from '../assets/description.svg';
+import description1 from '../assets/description1.svg';
+import description3 from '../assets/description3.svg';
 
 
 
@@ -823,7 +825,7 @@ export default function LandingPage() {
             "ThatsGame is a mentoring platform that connects young basketball athletes with professional mentors. We developed this app to elevate future athletes with comprehensive knowledge from sports experts."
           }
         />
-        <section className="w-screen h-screen">
+        <section className="w-screen h-full">
           
           <div className="flex items-center justify-center gap-4 p-2 bg-background1">
             <div className="flex items-center justify-center gap-4 p-2 flex-col my-8">
@@ -833,8 +835,25 @@ export default function LandingPage() {
                    <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
                     <p className="text-lg font-normal leading-[2rem] text-center text-[#636d86]">Being a mobile application development agency, we deeply understand your business needs and then search perfect solutions to match it. We are adept at offering result-oriented mobile app development services in the domain from the last many years.</p>
                    </div>
-                   <div className="flex items-center justify-center gap-4  flex-col">
-                         
+                   <div className="flex items-center justify-center gap-4 flex-col w-full mt-6">
+                         <div className="flex items-center justify-center gap-6 flex-col md:flex-row w-full">
+                                <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
+                                  <div className="flex items-center justify-center bg-[#F0FBF7] p-3 rounded-md"><h1 className="text-base text-[#46D39A]">5M+</h1></div>
+                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Downloads</h2><img src={description1} alt="description"/></div>
+                                </div>
+                                <div className="flex items-center justify-center gap-4 p-4 md:mb-14 bg-white rounded-lg px-6">
+                                <div className="flex items-center justify-center bg-[#FFF7F2] p-3 rounded-md"><h1 className="text-base text-[#F5808B]">$5M</h1></div>
+                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Revenue Added</h2><img src={description3} alt="description"/></div>
+                                </div>
+                                <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
+                                <div className="flex items-center justify-center bg-[#FEF1F2] p-3 rounded-md"><h1 className="text-base text-[#F5808B]">96%</h1></div>
+                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Project Delivered</h2><img src={description1} alt="description"/></div>
+                                </div>
+                         </div>
+                         <div className="flex items-center justify-center gap-4 p-4 flex-row bg-white rounded-lg px-6">
+                          <div className="flex items-center justify-center bg-[#EAF8FF] p-3 rounded-md"><h1 className="text-base text-[#50DEFD]">94%</h1></div>
+                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Customer Satisfaction</h2><img src={description} alt="description"/></div>
+                         </div>
                    </div>
             </div>
           </div>
@@ -864,7 +883,7 @@ export default function LandingPage() {
           }
         />
         <section className="w-screen h-screen">
-
+            
         </section>
       </main>
     </>
