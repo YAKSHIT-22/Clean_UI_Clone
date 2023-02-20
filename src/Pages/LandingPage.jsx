@@ -47,6 +47,12 @@ import appDev from "../assets/digitalLandscape/app-development-company.png";
 import mobileDev from "../assets/digitalLandscape/mobile-application-development-services.png";
 import digiMob from "../assets/digitalLandscape/digital-mobile-agency.jpg";
 import setlyt from "../assets/Portfolio/settlyt.png";
+import mobile from "../assets/webest/mobile.png";
+import nlp from "../assets/webest/nlp.jpg";
+import prod from "../assets/webest/product.png";
+import strategy from "../assets/webest/strategy.jpg";
+import web from "../assets/webest/web.png";
+import best from '../assets/webest/best.svg';
 
 export default function LandingPage() {
   const images = [
@@ -461,6 +467,229 @@ export default function LandingPage() {
             "Settlyt is one of the best friendly betting apps in USA, funded and backed by the Harvard Innovation lab. Be it doing more number of pushups or chugging a pint of beer faster than your friends, this app lets you play bets on such fun activities."
           }
         />
+        <section className="w-screen h-full relative">
+          <div className="flex items-center justify-center flex-col gap-4 p-2 my-12">
+            <div className="w-full flex items-center justify-center gap-2">
+              <h1 className="text-gray-800 text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem]">
+                We Are <span className="text-[#8873ef]"> Best</span> At
+              </h1>
+            </div>
+            <div className="flex justify-center items-center w-full">
+              <div className="flex items-center justify-center w-screen sm:p-4">
+                <Swiper
+                  modules={[Navigation, Pagination, EffectFade, Autoplay]}
+                  slidesPerView={1}
+                  spaceBetween={50}
+                  className="!px-4"
+                  autoplay={{ delay: 5000 }}
+                  // breakpoints={{
+                  //   300: {
+                  //     slidesPerView: 1,
+                  //     spaceBetween: 10,
+                  //   },
+                  //   500: {
+                  //     slidesPerView: 2,
+                  //     spaceBetween: 20,
+                  //   },
+                  //   768: {
+                  //     slidesPerView: 2,
+                  //     spaceBetween: 20,
+                  //   },
+                  //   1024: {
+                  //     slidesPerView: 3,
+                  //     spaceBetween: 30,
+                  //   },
+                  // }}
+                >
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center  rounded-md">
+                      <div className="flex items-center justify-center  w-screen sm:p-6">
+                        <div className="flex items-center justify-center w-full h-full mt-2 sm:mt-2 sm:p-4  md:mt-6">
+                          <div className="flex items-center flex-col md:flex-row justify-center gap-2 p-4 sm:p-2 lg:p-4 h-full w-full lg:w-[95%] xl:w-[85%]">
+                            <div className="flex items-center justify-center  w-full md:w-1/2 p-2">
+                              <img
+                                src={nlp}
+                                alt="hero"
+                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                              />
+                            </div>
+                            <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
+                              <div className="flex items-center justify-center gap-4 h-full p-1">
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold xl:leading-[3.6rem]">
+                                  Analytics Using AI and NLP
+                                </h1>
+                              </div>
+                              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%] p-1">
+                                <p className="font-medium text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">
+                                  The app developers in our company know the ins
+                                  and outs of data science, big data analysis,
+                                  enterprise search consulting services and
+                                  other latest technologies. We help
+                                  organizations unlock their full potential with
+                                  scalable apps that assist in making informed
+                                  business decisions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center  rounded-md">
+                      <div className="flex items-center justify-center  w-screen sm:p-6">
+                        <div className="flex items-center justify-center w-full h-full mt-2 sm:p-4  md:mt-6">
+                          <div className="flex items-center flex-col md:flex-row justify-center gap-2 p-4 sm:p-2 lg:p-4 h-full w-full lg:w-[95%] xl:w-[85%]">
+                            <div className="flex items-center justify-center  w-full md:w-1/2 p-2">
+                              <img
+                                src={mobile}
+                                alt="hero"
+                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                              />
+                            </div>
+                            <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
+                              <div className="flex items-center justify-center gap-4 h-full p-1">
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold xl:leading-[3.6rem]">
+                                  Analytics Using AI and NLP
+                                </h1>
+                              </div>
+                              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%] p-1">
+                                <p className="font-medium text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">
+                                  The app developers in our company know the ins
+                                  and outs of data science, big data analysis,
+                                  enterprise search consulting services and
+                                  other latest technologies. We help
+                                  organizations unlock their full potential with
+                                  scalable apps that assist in making informed
+                                  business decisions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center rounded-md">
+                      <div className="flex items-center justify-center  w-screen sm:p-6">
+                        <div className="flex items-center justify-center w-full h-full mt-2 sm:p-4  md:mt-6">
+                          <div className="flex items-center flex-col md:flex-row justify-center gap-2 p-4 sm:p-2 lg:p-4 h-full w-full lg:w-[95%] xl:w-[85%]">
+                            <div className="flex items-center justify-center  w-full md:w-1/2 p-2">
+                              <img
+                                src={web}
+                                alt="hero"
+                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                              />
+                            </div>
+                            <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
+                              <div className="flex items-center justify-center gap-4 h-full p-1">
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl  font-bold xl:leading-[3.6rem]">
+                                  Analytics Using AI and NLP
+                                </h1>
+                              </div>
+                              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%] p-1">
+                                <p className="font-medium text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">
+                                  The app developers in our company know the ins
+                                  and outs of data science, big data analysis,
+                                  enterprise search consulting services and
+                                  other latest technologies. We help
+                                  organizations unlock their full potential with
+                                  scalable apps that assist in making informed
+                                  business decisions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center rounded-md">
+                      <div className="flex items-center justify-center  w-screen sm:p-6">
+                        <div className="flex items-center justify-center w-full h-full mt-2 sm:p-4  md:mt-6">
+                          <div className="flex items-center flex-col md:flex-row justify-center gap-2 p-4 sm:p-2 lg:p-4 h-full w-full lg:w-[95%] xl:w-[85%]">
+                            <div className="flex items-center justify-center  w-full md:w-1/2 p-2">
+                              <img
+                                src={prod}
+                                alt="hero"
+                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg"
+                              />
+                            </div>
+                            <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
+                              <div className="flex items-center justify-center gap-4 h-full p-1">
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold xl:leading-[3.6rem]">
+                                  Analytics Using AI and NLP
+                                </h1>
+                              </div>
+                              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%] p-1">
+                                <p className="font-medium text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">
+                                  The app developers in our company know the ins
+                                  and outs of data science, big data analysis,
+                                  enterprise search consulting services and
+                                  other latest technologies. We help
+                                  organizations unlock their full potential with
+                                  scalable apps that assist in making informed
+                                  business decisions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="flex items-center justify-center rounded-md">
+                      <div className="flex items-center justify-center  w-screen sm:p-6">
+                        <div className="flex items-center justify-center w-full h-full mt-2 sm:p-4  md:mt-6">
+                          <div className="flex items-center flex-col md:flex-row justify-center gap-2 p-4 sm:p-2 lg:p-4 h-full w-full lg:w-[95%] xl:w-[85%]">
+                            <div className="flex items-center justify-center  w-full md:w-1/2 p-2">
+                              <img
+                                src={strategy}
+                                alt="hero"
+                                className="lg:h-[90%] h-[70%] sm:h-[80%] rounded-lg border"
+                              />
+                            </div>
+                            <div className="flex items-start justify-center gap-4 sm:w-[80%] md:w-1/2 flex-col xs:p-4 md:p-3">
+                              <div className="flex items-center justify-center gap-4 h-full p-1">
+                                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold xl:leading-[3.6rem]">
+                                  Analytics Using AI and NLP
+                                </h1>
+                              </div>
+                              <div className="flex items-center justify-center gap-4 w-full sm:w-[80%] md:w-[90%] p-1">
+                                <p className="font-medium text-[#828FAD] leading-normal md:leading-[1.5rem] text-xs sm:text-sm md:text-base">
+                                  The app developers in our company know the ins
+                                  and outs of data science, big data analysis,
+                                  enterprise search consulting services and
+                                  other latest technologies. We help
+                                  organizations unlock their full potential with
+                                  scalable apps that assist in making informed
+                                  business decisions.
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center justify-center absolute gap-2 p-2 top-6 right-0 left-0 bottom-0  w-screen h-full">
+            <div className="w-screen flex items-center justify-center p-2">
+              <img
+                src={best}
+                alt="background"
+                className="top-0 right-0 left-0 bottom-0 rotate-90  w-[75%] sm:h-full lg:w-[50%] xl:w-[44%] 2xl:w-[36%]"
+              />
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
