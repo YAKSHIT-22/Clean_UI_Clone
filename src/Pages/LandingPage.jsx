@@ -52,16 +52,24 @@ import nlp from "../assets/webest/nlp.jpg";
 import prod from "../assets/webest/product.png";
 import strategy from "../assets/webest/strategy.jpg";
 import web from "../assets/webest/web.png";
-import best from '../assets/webest/best.svg';
-import alphamatch from '../assets/Portfolio/alphamatch.png';
-import thatsgame from '../assets/Portfolio/thatsgame.png';
-import ideal from '../assets/Portfolio/idealprotein.png';
-import max from '../assets/Portfolio/maxsold.png';
+import best from "../assets/webest/best.svg";
+import alphamatch from "../assets/Portfolio/alphamatch.png";
+import thatsgame from "../assets/Portfolio/thatsgame.png";
+import ideal from "../assets/Portfolio/idealprotein.png";
+import max from "../assets/Portfolio/maxsold.png";
 import CustomerResponse from "../components/CustomerResponse";
-import description from '../assets/description.svg';
-import description1 from '../assets/description1.svg';
-import description3 from '../assets/description3.svg';
-
+import description from "../assets/description.svg";
+import description1 from "../assets/description1.svg";
+import description3 from "../assets/description3.svg";
+import Nominee from "../components/Nominee";
+import dyna from "../assets/Portfolio/dyna.png";
+import Blog from "../components/Blog";
+import logo from "../assets/logo.svg";
+import boston from '../assets/location/boston.jpg'
+import chicago from '../assets/location/chicago.jpg'
+import sanfransisco from '../assets/location/san-fransisco.jpg'
+import toranto from '../assets/location/toranto.jpg'
+import waterloo from '../assets/location/waterloo1.jpg'
 
 
 export default function LandingPage() {
@@ -700,7 +708,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <CustomerResponse img={best}/>
+        <CustomerResponse img={best} />
         <PortfolioSection
           img={alphamatch}
           bgClass={"bg-alpha"}
@@ -713,98 +721,79 @@ export default function LandingPage() {
           }
         />
         <section className="w-screen h-full relative">
-        <div className="flex justify-center items-center my-6">
-                <div className="flex items-center justify-center flex-col-reverse md:flex-row lg:gap-4 p-4 lg:my-4">
-                  <div className="flex items-center justify-center w-full md:w-[50%] p-2 h-full">
-                    <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full xl:w-[65%]  flex-col">
-                      <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                        <div className="p-4 flex items-center mr-4 justify-center bg-white border rounded-lg">
-                          {" "}
-                          <img
-                            src={sap}
-                            alt="sap"
-                            className="h-12"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex items-start justify-center flex-col  justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6 sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                        <div className="p-4 flex items-center ml-4 justify-center bg-white border rounded-lg">
-                          <img
-                            src={roku}
-                            alt="roku"
-                            className="h-12"
-                          />
-                        </div>
-                        
-                      </div>
-
-                      <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4 md:my-0">
-                        <div className="p-4 flex items-center justify-center mb-1 mt-4 ml-5 bg-white border rounded-lg">
-                          {" "}
-                          <img
-                            src={braze}
-                            alt="braze"
-                            className="h-12"
-                          />
-                        </div>
-                        
-                      </div>
-                      <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1  px-3 xs:px-4 md:my-0">
-                        <div className="p-4 flex items-center mt-2 mr-4 justify-center bg-white border rounded-lg">
-                          {" "}
-                          <img
-                            src={alpha}
-                            alt="alpha"
-                            className="h-12"
-                          />
-                        </div>
-                        
-                      </div>
-                      <div className="flex items-start justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                        <div className="p-4 flex items-center mb-2 ml-4 justify-center bg-white border rounded-md">
-                          {" "}
-                          <img
-                            src={aws}
-                            alt="aws"
-                            className="h-12"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                        <div className="p-4 flex items-center justify-center bg-white border rounded-lg">
-                          {" "}
-                          <img
-                            src={dotcms}
-                            alt="dotcms"
-                            className="h-12"
-                          />
-                        </div>
-                      </div>
+          <div className="flex justify-center items-center my-6">
+            <div className="flex items-center justify-center flex-col-reverse md:flex-row lg:gap-4 p-4 lg:my-4">
+              <div className="flex items-center justify-center w-full md:w-[50%] p-2 h-full">
+                <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full xl:w-[65%]  flex-col">
+                  <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center mr-4 justify-center bg-white border rounded-lg">
+                      {" "}
+                      <img src={sap} alt="sap" className="h-12" />
                     </div>
                   </div>
-                  <div className="flex items-start justify-center flex-col gap-4 p-2 md:p-4 w-full md:w-[50%]">
-                    <div className="flex items-center justify-center gap-4 h-full">
-                      <h1 className="text-3xl lg:text-4xl xl:text-[2.5rem] font-bold xl:leading-[3.6rem] text-[#8873ef]">
-                      We Partner
-                        <span className="text-gray-800">
-                          {" "}
-                          the Technology Companies
-                        </span>
-                      </h1>
+                  <div className="flex items-start justify-center flex-col  justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6 sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center ml-4 justify-center bg-white border rounded-lg">
+                      <img src={roku} alt="roku" className="h-12" />
                     </div>
-                    <div className="flex items-center justify-center gap-4 w-full  h-full sm:w-[80%] md:w-[90%]">
-                      <p className="font-medium text-[#67718a] leading-[1.6rem] text-sm md:text-[1rem]">
-                      We has partnered with many top-notch technology companies and delivered unparalleled application development solutions to upscale their business. We are incredibly lucky to work with a variety of tech industries to create outstanding digital solutions for your business. From mobile game development to AI-based hospital app development, we offer a wide range of services under one roof. That’s why we have become the most sought-destination for application development in Toronto.
-                      </p>
+                  </div>
+
+                  <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4 md:my-0">
+                    <div className="p-4 flex items-center justify-center mb-1 mt-4 ml-5 bg-white border rounded-lg">
+                      {" "}
+                      <img src={braze} alt="braze" className="h-12" />
                     </div>
-                    <Link className="flex items-center justify-start gap-2 flex-row w-full text-[#8873ef]">
-                      <p>Show all services</p>
-                      <img src={arrow} alt="arrow" />
-                    </Link>
+                  </div>
+                  <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1  px-3 xs:px-4 md:my-0">
+                    <div className="p-4 flex items-center mt-2 mr-4 justify-center bg-white border rounded-lg">
+                      {" "}
+                      <img src={alpha} alt="alpha" className="h-12" />
+                    </div>
+                  </div>
+                  <div className="flex items-start justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center mb-2 ml-4 justify-center bg-white border rounded-md">
+                      {" "}
+                      <img src={aws} alt="aws" className="h-12" />
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center justify-center bg-white border rounded-lg">
+                      {" "}
+                      <img src={dotcms} alt="dotcms" className="h-12" />
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="flex items-center justify-center absolute gap-2 p-2 top-6 right-0 left-0 bottom-0 z-[-1] w-screen h-full">
+              <div className="flex items-start justify-center flex-col gap-4 p-2 md:p-4 w-full md:w-[50%]">
+                <div className="flex items-center justify-center gap-4 h-full">
+                  <h1 className="text-3xl lg:text-4xl xl:text-[2.5rem] font-bold xl:leading-[3.6rem] text-[#8873ef]">
+                    We Partner
+                    <span className="text-gray-800">
+                      {" "}
+                      the Technology Companies
+                    </span>
+                  </h1>
+                </div>
+                <div className="flex items-center justify-center gap-4 w-full  h-full sm:w-[80%] md:w-[90%]">
+                  <p className="font-medium text-[#67718a] leading-[1.6rem] text-sm md:text-[1rem]">
+                    We has partnered with many top-notch technology companies
+                    and delivered unparalleled application development solutions
+                    to upscale their business. We are incredibly lucky to work
+                    with a variety of tech industries to create outstanding
+                    digital solutions for your business. From mobile game
+                    development to AI-based hospital app development, we offer a
+                    wide range of services under one roof. That’s why we have
+                    become the most sought-destination for application
+                    development in Toronto.
+                  </p>
+                </div>
+                <Link className="flex items-center justify-start gap-2 flex-row w-full text-[#8873ef]">
+                  <p>Show all services</p>
+                  <img src={arrow} alt="arrow" />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex items-center justify-center absolute gap-2 p-2 top-6 right-0 left-0 bottom-0 z-[-1] w-screen h-full">
             <div className="w-screen flex items-center justify-center p-2">
               <img
                 src={best}
@@ -826,45 +815,72 @@ export default function LandingPage() {
           }
         />
         <section className="w-screen h-full">
-          
           <div className="flex items-center justify-center gap-4 p-2 bg-background1">
             <div className="flex items-center justify-center gap-4 p-2 flex-col my-8">
-                   <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
-                    <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[2rem] font-medium xl:leading-[3.6rem] text-center">Powering Innovation across verticals, by collaborating with Startups, Enterprises and the world's Leading Brands</h1>
-                   </div>
-                   <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
-                    <p className="text-lg font-normal leading-[2rem] text-center text-[#636d86]">Being a mobile application development agency, we deeply understand your business needs and then search perfect solutions to match it. We are adept at offering result-oriented mobile app development services in the domain from the last many years.</p>
-                   </div>
-                   <div className="flex items-center justify-center gap-4 flex-col w-full mt-6">
-                         <div className="flex items-center justify-center gap-6 flex-col md:flex-row w-full">
-                                <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
-                                  <div className="flex items-center justify-center bg-[#F0FBF7] p-3 rounded-md"><h1 className="text-base text-[#46D39A]">5M+</h1></div>
-                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Downloads</h2><img src={description1} alt="description"/></div>
-                                </div>
-                                <div className="flex items-center justify-center gap-4 p-4 md:mb-14 bg-white rounded-lg px-6">
-                                <div className="flex items-center justify-center bg-[#FFF7F2] p-3 rounded-md"><h1 className="text-base text-[#F5808B]">$5M</h1></div>
-                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Revenue Added</h2><img src={description3} alt="description"/></div>
-                                </div>
-                                <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
-                                <div className="flex items-center justify-center bg-[#FEF1F2] p-3 rounded-md"><h1 className="text-base text-[#F5808B]">96%</h1></div>
-                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Project Delivered</h2><img src={description1} alt="description"/></div>
-                                </div>
-                         </div>
-                         <div className="flex items-center justify-center gap-4 p-4 flex-row bg-white rounded-lg px-6">
-                          <div className="flex items-center justify-center bg-[#EAF8FF] p-3 rounded-md"><h1 className="text-base text-[#50DEFD]">94%</h1></div>
-                                  <div className="w-full h-full flex items-start justify-center flex-col gap-2"><h2>Customer Satisfaction</h2><img src={description} alt="description"/></div>
-                         </div>
-                   </div>
+              <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
+                <h1 className="text-xl sm:text-3xl lg:text-4xl xl:text-[2rem] font-medium xl:leading-[3.6rem] text-center">
+                  Powering Innovation across verticals, by collaborating with
+                  Startups, Enterprises and the world's Leading Brands
+                </h1>
+              </div>
+              <div className="flex items-center justify-center gap-4 p-2 max-w-6xl">
+                <p className="text-lg font-normal leading-[2rem] text-center text-[#636d86]">
+                  Being a mobile application development agency, we deeply
+                  understand your business needs and then search perfect
+                  solutions to match it. We are adept at offering
+                  result-oriented mobile app development services in the domain
+                  from the last many years.
+                </p>
+              </div>
+              <div className="flex items-center justify-center gap-4 flex-col w-full mt-6">
+                <div className="flex items-center justify-center gap-6 flex-col md:flex-row w-full">
+                  <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
+                    <div className="flex items-center justify-center bg-[#F0FBF7] p-3 rounded-md">
+                      <h1 className="text-base text-[#46D39A]">5M+</h1>
+                    </div>
+                    <div className="w-full h-full flex items-start justify-center flex-col gap-2">
+                      <h2>Downloads</h2>
+                      <img src={description1} alt="description" />
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-4 p-4 md:mb-14 bg-white rounded-lg px-6">
+                    <div className="flex items-center justify-center bg-[#FFF7F2] p-3 rounded-md">
+                      <h1 className="text-base text-[#F5808B]">$5M</h1>
+                    </div>
+                    <div className="w-full h-full flex items-start justify-center flex-col gap-2">
+                      <h2>Revenue Added</h2>
+                      <img src={description3} alt="description" />
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center gap-4 p-4 bg-white rounded-lg px-6">
+                    <div className="flex items-center justify-center bg-[#FEF1F2] p-3 rounded-md">
+                      <h1 className="text-base text-[#F5808B]">96%</h1>
+                    </div>
+                    <div className="w-full h-full flex items-start justify-center flex-col gap-2">
+                      <h2>Project Delivered</h2>
+                      <img src={description1} alt="description" />
+                    </div>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center gap-4 p-4 flex-row bg-white rounded-lg px-6">
+                  <div className="flex items-center justify-center bg-[#EAF8FF] p-3 rounded-md">
+                    <h1 className="text-base text-[#50DEFD]">94%</h1>
+                  </div>
+                  <div className="w-full h-full flex items-start justify-center flex-col gap-2">
+                    <h2>Customer Satisfaction</h2>
+                    <img src={description} alt="description" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-
         </section>
         <PortfolioSection
           img={ideal}
           bgClass={"bg-ideal"}
           heading={"Ideal Protein"}
           imgClass={
-            "h-[60%] sm:h-[70%] md:h-[36rem] lg:h-[56rem] xl:h-[64rem] bottom-[-4] right-0 md:absolute"
+            "h-[60%] sm:h-[70%] md:h-[36rem] lg:h-[46rem] xl:h-[60rem] bottom-[-4] right-0 md:absolute"
           }
           subtitle={
             "Ideal Protein has aided several fitness enthusiasts to spruce up their lifestyles. Assist your target audience with high-end fitness apps by availing our mobile application development services now."
@@ -876,16 +892,206 @@ export default function LandingPage() {
           bgClass={"bg-maxsold"}
           heading={"Maxsold"}
           imgClass={
-            "h-[60%] sm:h-[70%] md:h-[40rem] lg:h-[56rem] xl:h-[70rem] bottom-[-4] right-0 md:absolute"
+            "h-[50%] md:h-[40rem] lg:h-[56rem] xl:h-[70rem] bottom-[-4] right-0 md:absolute"
           }
           subtitle={
             "We created Maxsold to aid sellers with an efficient catalog app. It accommodates all activities like downsizing sale, estate sale, relocation sale or business liquidation under one head."
           }
         />
-        <section className="w-screen h-screen">
-            
+        <Nominee />
+        <Blog />
+        <PortfolioSection
+          img={dyna}
+          bgClass={"bg-dyna"}
+          heading={"Dyna-Glo"}
+          imgClass={
+            "h-[60%] sm:h-[70%] md:h-[40rem] lg:h-[56rem] xl:h-[70rem] bottom-[-4] right-0 md:absolute"
+          }
+          subtitle={
+            "Connect your GHP smoker via Bluetooth to get an automated answer for everything you are cooking. Our Dyna-glo app helps you to maintain the right temperature, monitor the cooking process, and notify you when your food is ready."
+          }
+        />
+        <section className="w-screen h-full">
+          <div className="flex justify-center items-center my-4">
+            <div className="flex items-start justify-center flex-col-reverse md:flex-row gap-4 p-4 lg:my-4">
+              <div className="flex items-start justify-start flex-col gap-4 p-2 md:p-4 w-full md:w-1/2">
+                <div className="flex items-center justify-center gap-4 h-full">
+                  <h1 className="text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem]">
+                    We
+                    <span className="text-[#8873ef]">
+                      {" "}
+                      Prepare Enterprises
+                    </span>{" "}
+                    For Tomorrow
+                  </h1>
+                </div>
+                <div className="flex items-center justify-center gap-4 w-full  h-full sm:w-[75%] md:w-[80%]">
+                  <p className="font-medium text-[#828FAD] leading-[1.6rem] text-sm md:text-[1rem]">
+                    As one of Canada's leading mobile app development firms, We
+                    has expertise in helping global clients across diverse
+                    industries to boost themselves with digital transformation.
+                    We help all types of industries like government, healthcare,
+                    education by developing applications for them. Our app
+                    development team focuses on customer satisfaction.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center justify-center w-full md:w-1/2 xs:p-2 sm:p-4 md:p-2 h-full">
+                <div className="grid gap-4 grid-cols-2 items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full sm:w-[75%] md:w-full h-[40rem] flex-col bg-tommorow bg-no-repeat bg-cover bg-center rounded-lg">
+                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
+                    <div className="p-2 flex items-center justify-center">
+                      {" "}
+                      <img
+                        src={product}
+                        alt="product"
+                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
+                      />
+                    </div>
+                    <div className="p-0 sm:p-1 w-full">
+                      {" "}
+                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
+                        Product Management
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
+                    <div className="p-2 flex items-center justify-center">
+                      <img
+                        src={software}
+                        alt="software"
+                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
+                      />
+                    </div>
+                    <div className="p-0 sm:p-1 w-full">
+                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
+                        Software Development
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
+                    <div className="p-2 flex items-center justify-center">
+                      {" "}
+                      <img
+                        src={android}
+                        alt="android"
+                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
+                      />
+                    </div>
+                    <div className="p-0 sm:p-1 w-full">
+                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
+                        Android Development
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
+                    <div className="p-2 flex items-center justify-center">
+                      {" "}
+                      <img
+                        src={ios}
+                        alt="ios"
+                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
+                      />
+                    </div>
+                    <div className="p-0 sm:p-1 w-full ">
+                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
+                        iOS Development
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="w-screen h-full">
+          <div className="flex items-center justify-center p-4 flex-col relative">
+          <div className="flex justify-center items-center my-4 p-3 bg-contact bg-no-repeat bg-center bg-cover rounded-lg max-w-6xl">
+            <div className="flex justify-center items-center flex-col md:flex-row my-8 p-6">
+              <div className="flex md:w-1/2 w-full justify-center items-center flex-col text-white my-4 gap-2 p-4">
+                <div className="flex items-center justify-center p-2">
+                  <img
+                    src={logo}
+                    alt="logo"
+                    className="md:w-20 md:h-10 w-16 h-6"
+                  />
+                </div>
+                 <div className="flex items-center justify-center p-2">
+                  <h1 className="text-center text-xl font-bold">SAY HELLO!</h1>
+                  </div>                  
+                 <div className="flex items-center justify-center p-2">
+                  <h2 className="text-center text-xl font-semibold">Get in Touch with us!</h2>
+                  </div>                  
+                 <div className="flex items-center justify-center p-2 w-[90%] sm:w-[75%]">
+                  <p className="text-center text-base font-normal">Let Us Become Your Partner In Developing A Memorable Digital Experience!</p>
+                  </div>                  
+              </div>
+              <div className="flex md:w-1/2 w-full justify-center items-start flex-col my-2 p-2">
+                <form className="w-full h-full flex-col flex items-start justify-center gap-4 sm:gap-6 md:gap-8 p-2">
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="name">Name</label> 
+                          <input type="text" id="name" className="bg-transparent border-b-2 border-white p-1 w-full outline-none text-white"></input>  
+                    </div>
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="email">Email</label> 
+                          <input type="email" id="email" className="bg-transparent border-b-2 border-white p-1 w-full outline-none text-white"></input>  
+                    </div>
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="phone">Phone</label> 
+                          <input type="tel" id="phone" className="bg-transparent border-b-2 border-white p-1 w-full outline-none text-white"></input>  
+                    </div>
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="budget">Budget</label> 
+                          <input type="range" id="budget" min="20" max="900" step="1" className="accent-gray-50 p-1 w-full outline-none text-white"></input>  
+                    </div>
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="message">Project Description (Optional)</label> 
+                          <textarea type="text" id="message" rows={5} cols={10} className="bg-transparent border-b-2 border-white p-1 w-full outline-none text-white"></textarea>  
+                    </div>
+                    <div className="w-full h-full flex-col flex items-start justify-center">
+                          <label className="text-white w-full" for="sum">The Sum Of 1+5</label> 
+                          <input type="number" id="sum" className="bg-transparent border-b-2 border-white p-1 w-full outline-none text-white"></input>  
+                    </div>
+                    <Button title={"Send Message"} divClass={"bg-white mt-4"} pClass={"!text-[#4AB96A] text-xs"}/>
+                </form>
+              </div>
+            </div>
+           
+          </div>
+          <div className="flex items-center justify-center gap-4 p-2 text-white bottom-0 mt-[-5rem] z-[10] flex-col">
+                  <div className="flex items-center justify-center w-full h-full"><h1  className="text-center text-2xl font-bold">Office Location</h1></div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 items-center justify-center  gap-4 p-2 relative ">
+                       <div className="flex items-start justify-center gap-4 relative grid-cols-1">
+                        <div className="flex items-center justify-center"><img src={toranto} alt="boston" className="rounded-lg"/></div>
+                        <div className="flex items-center justify-center absolute top-0 gap-2  flex-col"><h1 className="w-[75%] text-center mt-2 whitespace-nowrap  text-black text-sm">Toronto</h1><p className="w-[85%] text-black text-center text-xs">350 Bay St, 7th floor, Toronto, ON M5H 2S6, Canada</p></div>
+                       </div>
+                       <div className="flex items-start justify-center gap-4 relative grid-cols-1">
+                        <div className="flex items-center justify-center"><img src={boston} alt="boston" className="rounded-lg"/></div>
+                        <div className="flex items-center justify-center absolute top-0 gap-2 flex-col"><h1 className="w-[75%] text-center  mt-2 whitespace-nowrap text-black text-sm">Boston</h1><p className="w-[85%] text-black text-center text-xs">800 Boylston Street, 16th Floor, Boston, MA 02199, United States</p></div>
+                       </div>
+                       <div className="flex items-start justify-center gap-4 relative grid-cols-1">
+                        <div className="flex items-center justify-center"><img src={chicago} alt="boston" className="rounded-lg"/></div>
+                        <div className="flex items-center justify-center absolute top-0 gap-2 flex-col"><h1 className="w-[75%] text-center  mt-2 whitespace-nowrap text-black text-sm">Chicago</h1><p className="w-[85%] text-black text-center text-xs">Two Prudential Plaza, 180 N. Stetson Street, Suite 3500, Chicago, 60601, USA</p></div>
+                       </div>
+                       <div className="flex items-start justify-center gap-4 relative grid-cols-1">
+                        <div className="flex items-center justify-center"><img src={sanfransisco} alt="boston" className="rounded-lg"/></div>
+                        <div className="flex items-center justify-center absolute top-0 gap-2 flex-col"><h1 className="w-[75%] text-center  mt-2 whitespace-nowrap text-black text-sm">San Francisco</h1><p className="w-[85%] text-black text-center text-xs">388 Market St, San Francisco, CA 94111, USA</p></div>
+                       </div>
+                       <div className="flex items-start justify-center gap-4 relative grid-cols-1">
+                        <div className="flex items-center justify-center"><img src={waterloo} alt="boston" className="rounded-lg"/></div>
+                        <div className="flex items-center justify-center absolute top-0 gap-2 flex-col"><h1 className="w-[75%] text-center  mt-2 whitespace-nowrap text-black text-sm">Waterloo</h1><p className="w-[85%] text-black text-center text-xs">180 Northfield Dr W #4, Waterloo, ON N2L 0C7, Canada</p></div>
+                       </div>
+                       
+                  </div>
+          </div>
+          </div>
         </section>
       </main>
+      <footer className="w-screen h-screen">
+         <div className="flex justify-center items-center my-2 p-3 bg-black">
+           
+          </div>
+      </footer>
     </>
   );
 }

@@ -44,6 +44,9 @@ module.exports = {
 				'background1':"url('./assets/background1.svg')",
 				'ideal':"url('./assets/ideal.png')",
 				'maxsold':"url('./assets/maxsold.png')",
+				'dyna':'url("./assets/dyna.svg")',
+				'tommorow':'url("./assets/tommorow.svg")',
+				'contact':'url("./assets/contact.svg")',
 			  }
 			
 		},
