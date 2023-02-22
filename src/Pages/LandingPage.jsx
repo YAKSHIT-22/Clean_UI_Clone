@@ -25,7 +25,7 @@ import android from "../assets/android.svg";
 import ios from "../assets/ios.svg";
 import product from "../assets/product.svg";
 import software from "../assets/software.svg";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import arrow from "../assets/arrowright.svg";
 import wsp from "../assets/Portfolio/wsps.png";
 import PortfolioSection from "../components/PortfolioSection";
@@ -70,11 +70,7 @@ import chicago from '../assets/location/chicago.jpg'
 import sanfransisco from '../assets/location/san-fransisco.jpg'
 import toranto from '../assets/location/toranto.jpg'
 import waterloo from '../assets/location/waterloo1.jpg'
-import footer from '../assets/footer/footer.svg'
-import facebook from '../assets/footer/facebook.svg'
-import linkedin from '../assets/footer/linkedin.svg'
-import instagram from '../assets/footer/instagram.svg'
-import twitter from '../assets/footer/twitter.svg'
+
 
 export default function LandingPage() {
   const images = [
@@ -956,69 +952,48 @@ export default function LandingPage() {
                 </div>
               </div>
               <div className="flex items-center justify-center w-full md:w-1/2 xs:p-2 sm:p-4 md:p-2 h-full">
-                <div className="grid gap-4 grid-cols-2 items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full sm:w-[75%] md:w-full h-[40rem] flex-col bg-tommorow bg-no-repeat bg-cover bg-center rounded-lg">
-                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
-                    <div className="p-2 flex items-center justify-center">
+                <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full sm:w-[75%] md:w-full h-[40rem] flex-col bg-tommorow bg-no-repeat bg-cover bg-center rounded-lg">
+                <div className="flex items-center justify-center w-full md:w-[50%] p-2 h-full">
+                <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full xl:w-[65%]  flex-col">
+                  <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center mr-4 justify-center bg-white border rounded-lg">
                       {" "}
-                      <img
-                        src={product}
-                        alt="product"
-                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
-                      />
-                    </div>
-                    <div className="p-0 sm:p-1 w-full">
-                      {" "}
-                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
-                        Product Management
-                      </p>
+                      <img src={sap} alt="sap" className="h-12" />
                     </div>
                   </div>
-                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
-                    <div className="p-2 flex items-center justify-center">
-                      <img
-                        src={software}
-                        alt="software"
-                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
-                      />
-                    </div>
-                    <div className="p-0 sm:p-1 w-full">
-                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
-                        Software Development
-                      </p>
+                  <div className="flex items-start justify-center flex-col  justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6 sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center ml-4 justify-center bg-white border rounded-lg">
+                      <img src={roku} alt="roku" className="h-12" />
                     </div>
                   </div>
 
-                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
-                    <div className="p-2 flex items-center justify-center">
+                  <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4 md:my-0">
+                    <div className="p-4 flex items-center justify-center mb-1 mt-4 ml-5 bg-white border rounded-lg">
                       {" "}
-                      <img
-                        src={android}
-                        alt="android"
-                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
-                      />
-                    </div>
-                    <div className="p-0 sm:p-1 w-full">
-                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
-                        Android Development
-                      </p>
+                      <img src={braze} alt="braze" className="h-12" />
                     </div>
                   </div>
-                  <div className="flex grid-cols-1 items-center justify-center flex-col w-min justify-self-center h-full bg-white rounded-md gap-1 sm:gap-2 sm:px-6 sm:py-2 sm:my-2 my-1 py-1 px-3 xs:px-4 md:p-4 md:my-0">
-                    <div className="p-2 flex items-center justify-center">
+                  <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1  px-3 xs:px-4 md:my-0">
+                    <div className="p-4 flex items-center mt-2 mr-4 justify-center bg-white border rounded-lg">
                       {" "}
-                      <img
-                        src={ios}
-                        alt="ios"
-                        className="sm:w-full sm:h-full w-[90%] h-[90%]"
-                      />
+                      <img src={alpha} alt="alpha" className="h-12" />
                     </div>
-                    <div className="p-0 sm:p-1 w-full ">
-                      <p className="font-normal text-xs sm:text-sm md:text-base lg:text-lg  text-center">
-                        iOS Development
-                      </p>
+                  </div>
+                  <div className="flex items-start justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center mb-2 ml-4 justify-center bg-white border rounded-md">
+                      {" "}
+                      <img src={aws} alt="aws" className="h-12" />
+                    </div>
+                  </div>
+                  <div className="flex items-center justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
+                    <div className="p-4 flex items-center justify-center bg-white border rounded-lg">
+                      {" "}
+                      <img src={dotcms} alt="dotcms" className="h-12" />
                     </div>
                   </div>
                 </div>
+              </div>
+              </div>
               </div>
             </div>
           </div>
@@ -1110,178 +1085,7 @@ export default function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className="w-screen h-full">
-         <div className="flex justify-start flex-col items-start md:items-center md:justify-center my-2 p-3 bg-footer w-screen h-screen">
-               <div className="flex items-start justify-start md:items-center md:justify-center flex-col gap-4 p-4">
-               <div className="flex flex-col items-start justify-center">
-              <div className="flex md:hidden flex-col items-start justify-center gap-8 font-semibold text-gray-100">
-                <NavLink
-                  to="/about"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  {" "}
-                  <div className="flex item-center justify-center cursor-pointer font-semibold text-gray-100">
-                    <p>About</p>
-                  </div>
-                </NavLink>
-                <NavLink
-                  to="/services"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  <div className="flex item-center justify-center flex-row cursor-pointer gap-2 font-semibold text-gray-100">
-                    <p>Services</p>
-                    <div className="flex items-center justify-center">
-                        <img src={arrow} alt="arrow"/>
-                    </div>
-                  </div>
-                </NavLink>
-                <NavLink
-                  to="/industries"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  {" "}
-                  <div className="flex item-center justify-center flex-row cursor-pointer gap-2 font-semibold text-gray-100">
-                    <p>Industries</p>
-                    <div className="flex items-center justify-center">
-                        <img src={arrow} alt="arrow"/>
-                    </div>
-                  </div>
-                </NavLink>
-                <NavLink
-                  to="/technologies"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  <div className="flex item-center justify-center flex-row cursor-pointer gap-2 font-semibold text-gray-100">
-                    <p>Technologies</p>
-                    <div className="flex items-center justify-center">
-                        <img src={arrow} alt="arrow"/>
-                    </div>
-                  </div>
-                </NavLink>
-                <NavLink
-                  to="/portfolio"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  <div className="flex item-center justify-center cursor-pointer font-semibold text-gray-100">
-                    <p>Portfolio</p>
-                  </div>
-                </NavLink>
-                <NavLink
-                  to="/blog"
-                  style={({ isActive }) => ({
-                    color: isActive ? "red" : "black",
-                    fontWeight: isActive ? "bold" : "normal",
-                    transition: "all 0.5s ease-in-out",
-                  })}
-                >
-                  <div className="flex item-center justify-center cursor-pointer font-semibold text-gray-100">
-                    <p>Blog</p>
-                  </div>
-                </NavLink>
-                <p className="text-white text-sm font-normal">© 2023 All Right Reserved | Sitemap</p>
-              </div>
-              
-            </div>
-                     <div className="hidden md:flex items-start flex-row justify-between gap-4 p-4 max-w-5xl w-full">
-                         <div className="flex flex-col items-start justify-center gap-4 p-4 m">
-                                     <h1 className="text-white text-base">About</h1>  
-                                     <div className="flex items-start justify-center flex-col gap-4">
-                                      <p className="text-[#686F98] text-sm">Our Company</p>
-                                      <p className="text-[#686F98] text-sm">How we work</p>
-                                      <p className="text-[#686F98] text-sm">MVP</p>
-                                      <p className="text-[#686F98] text-sm">Startup</p>
-                                      <p className="text-[#686F98] text-sm">Careers</p>
-                                      <p className="text-[#686F98] text-sm">Contact Us</p>
-                                      <p className="text-[#686F98] text-sm">Blog</p>
-                                    </div> 
-                         </div>
-                         <div className="flex flex-col items-start justify-center gap-4 p-4">
-                                     <h1 className="text-white text-base">Services</h1>  
-                                     <div className="flex items-start justify-center flex-col gap-4">
-                                      <p className="text-[#686F98] text-sm">iOS App Development</p>
-                                      <p className="text-[#686F98] text-sm">Android app development</p>
-                                      <p className="text-[#686F98] text-sm">IoT Application Development</p>
-                                      <p className="text-[#686F98] text-sm">AI App Development</p>
-                                      <p className="text-[#686F98] text-sm">Software Development</p>
-                                      <p className="text-[#686F98] text-sm">UI/UX Design</p>
-                                      <p className="text-[#686F98] text-sm">Web Development</p>
-                                      <p className="text-[#686F98] text-sm">Flutter App Development</p>
-                                      <p className="text-[#686F98] text-sm">React Native Development</p>
-                                      <p className="text-[#686F98] text-sm">more...</p>
-                                    </div> 
-                         </div>
-                         <div className="flex flex-col items-start justify-center gap-4 p-4">
-                                     <h1 className="text-white text-base">Industries</h1>  
-                                     <div className="flex items-start justify-center flex-col gap-4">
-                                      <p className="text-[#686F98] text-sm">Mobile Game Apps</p>
-                                      <p className="text-[#686F98] text-sm">HealthCare Apps</p>
-                                      <p className="text-[#686F98] text-sm">Government Apps</p>
-                                      <p className="text-[#686F98] text-sm">Fitness & Wellness Apps</p>
-                                      <p className="text-[#686F98] text-sm">Enterprises Apps</p>
-                                      <p className="text-[#686F98] text-sm">Education Apps</p>
-                                      <p className="text-[#686F98] text-sm">On Demand Apps</p>
-                                      <p className="text-[#686F98] text-sm">Social Network Apps</p>
-                                      <p className="text-[#686F98] text-sm">Events & Entertainment Apps</p>
-                                      <p className="text-[#686F98] text-sm">Retail & E-commerce Apps</p>
-                                      <p className="text-[#686F98] text-sm">Beauty & Fashion Apps</p>
-                                    </div> 
-                         </div>
-                         <div className="flex flex-col items-start justify-center gap-4 p-4">
-                                     <h1 className="text-white text-base">Portfolio</h1>  
-                                     <div className="flex items-start justify-center flex-col gap-4">
-                                      <p className="text-[#686F98] text-sm">Settlyt</p>
-                                      <p className="text-[#686F98] text-sm">Mindset</p>
-                                      <p className="text-[#686F98] text-sm">WSPS</p>
-                                      <p className="text-[#686F98] text-sm">Alphamatch</p>
-                                      <p className="text-[#686F98] text-sm">&Jane</p>
-                                      <p className="text-[#686F98] text-sm">Maxsold</p>
-                                      <p className="text-[#686F98] text-sm">ThatsGame</p>
-                                      <p className="text-[#686F98] text-sm">Ideal Protein</p>
-                                      <p className="text-[#686F98] text-sm">DynaGlo</p>
-                                      <p className="text-[#686F98] text-sm">Viewgem</p>
-                                      <p className="text-[#686F98] text-sm">Kampsite</p>
-                                    </div> 
-                         </div>
-                     </div>
-                     
-               </div>
-               <div className="flex items-center justify-center gap-4 p-4 w-full h-full">
-                     <div className="flex items-center justify-around w-full flex-col gap-8 md:flex-row p-2">
-                <div className="flex items-center justify-center">
-                <img src={footer} alt="dmcs" className="w-40 h-auto"/>
-                </div>
-                <p className="text-white text-sm md:flex hidden">© 2023 All Right Reserved | Sitemap</p>
-                <div className="flex items-center justify-center flex-row gap-2 p-2">
-                <img src={facebook} alt="dmcs" className="h-7"/>
-                <img src={twitter} alt="dmcs" className="h-7"/>
-                <img src={instagram} alt="dmcs" className="h-7"/>
-                <img src={linkedin} alt="dmcs" className="h-7"/>
-                </div>
-
-              </div>
-                     </div>
-          </div>
-      </footer>
+      
     </>
   );
 }
