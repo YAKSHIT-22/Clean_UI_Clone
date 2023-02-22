@@ -70,7 +70,14 @@ import chicago from '../assets/location/chicago.jpg'
 import sanfransisco from '../assets/location/san-fransisco.jpg'
 import toranto from '../assets/location/toranto.jpg'
 import waterloo from '../assets/location/waterloo1.jpg'
-
+import auto from '../assets/enterprise/auto.png';
+import aviation from '../assets/enterprise/Aviation.png';
+import chatbot from '../assets/enterprise/chatbot.png';
+import ecommerce from '../assets/enterprise/ecommerce.png';
+import education from '../assets/enterprise/education.png';
+import security from '../assets/enterprise/Security.png';
+import video from '../assets/enterprise/Video.png';
+import technology from '../assets/enterprise/Technology.png';
 
 export default function LandingPage() {
   const images = [
@@ -951,44 +958,51 @@ export default function LandingPage() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-full md:w-1/2 xs:p-2 sm:p-4 md:p-2 h-full">
-                <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full sm:w-[75%] md:w-full h-[40rem] flex-col bg-tommorow bg-no-repeat bg-cover bg-center rounded-lg">
-                <div className="flex items-center justify-center w-full md:w-[50%] p-2 h-full">
-                <div className="flex items-center justify-center p-5 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full xl:w-[65%]  flex-col">
-                  <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                    <div className="p-4 flex items-center mr-4 justify-center bg-white border rounded-lg">
+              <div className="flex items-center justify-center w-full md:w-1/2 h-full md:px-8 md:py-2">
+                <div className="flex items-center justify-center p-3 lg:p-6 md:p-4 sm:p-6 lg:m-4 w-full sm:w-[75%] md:w-full h-full flex-col bg-tommorow bg-no-repeat bg-cover bg-center rounded-lg">
+                <div className="flex items-center justify-center w-full h-full my-2">
+                <div className="flex items-center justify-center w-full flex-col">
+                  <div className="flex items-end justify-start flex-col w-full rounded-md gap-1 sm:gap-2   md:my-0">
+                    <div className="flex items-center mr-4 justify-center p-2">
                       {" "}
-                      <img src={sap} alt="sap" className="h-12" />
+                      <img src={auto} alt="auto" className="h-28" />
                     </div>
                   </div>
-                  <div className="flex items-start justify-center flex-col  justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6 sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                    <div className="p-4 flex items-center ml-4 justify-center bg-white border rounded-lg">
-                      <img src={roku} alt="roku" className="h-12" />
+                  <div className="flex items-start justify-around flex-row  justify-self-center w-full  rounded-md gap-1 sm:gap-2">
+                    <div className="flex items-center sm:ml-4 justify-between p-2">
+                      <img src={ecommerce} alt="ecommerce" className="h-28" />
+                    </div>
+                    <div className="flex items-center xs:mr-8 sm:mr-16 md:mr-14 lg:mr-16 justify-between p-2">
+                    <img src={aviation} alt="aviation" className="h-28" />
                     </div>
                   </div>
 
-                  <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4 md:my-0">
-                    <div className="p-4 flex items-center justify-center mb-1 mt-4 ml-5 bg-white border rounded-lg">
+                  <div className="flex  items-center justify-center flex-col justify-self-center w-full   rounded-md gap-1 sm:gap-2">
+                    <div className="flex items-center justify-center ml-5 p-2">
                       {" "}
-                      <img src={braze} alt="braze" className="h-12" />
+                      <img src={education} alt="education" className="h-28" />
                     </div>
                   </div>
-                  <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1  px-3 xs:px-4 md:my-0">
-                    <div className="p-4 flex items-center mt-2 mr-4 justify-center bg-white border rounded-lg">
+                  <div className="flex items-end justify-center flex-col justify-self-center  w-full rounded-md gap-1 sm:gap-2">
+                    <div className="flex items-center ml-3 sm:mr-12 justify-center p-2">
                       {" "}
-                      <img src={alpha} alt="alpha" className="h-12" />
+                      <img src={security} alt="security" className="h-28" />
                     </div>
                   </div>
-                  <div className="flex items-start justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                    <div className="p-4 flex items-center mb-2 ml-4 justify-center bg-white border rounded-md">
+                  <div className="flex items-start justify-between flex-row justify-self-center w-full  rounded-md gap-1 sm:gap-2 ">
+                    <div className="flex items-center sm:ml-8 justify-between p-2">
                       {" "}
-                      <img src={aws} alt="aws" className="h-12" />
+                      <img src={technology} alt="technology" className="h-28" />
+                    </div>
+                    <div className="flex items-center mb-2 xs:mr-14 md:mr-0 lg:mr-10 xl:mr-52 justify-between p-2">
+                      {" "}
+                      <img src={chatbot} alt="chatbot" className="h-28" />
                     </div>
                   </div>
-                  <div className="flex items-center justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2 sm:px-6  sm:my-2 my-1 px-3 xs:px-4  md:my-0">
-                    <div className="p-4 flex items-center justify-center bg-white border rounded-lg">
+                  <div className="flex items-end justify-center flex-col justify-self-center w-full  rounded-md gap-1 sm:gap-2">
+                    <div className="flex items-center justify-center p-2">
                       {" "}
-                      <img src={dotcms} alt="dotcms" className="h-12" />
+                      <img src={video} alt="video" className="h-28" />
                     </div>
                   </div>
                 </div>
