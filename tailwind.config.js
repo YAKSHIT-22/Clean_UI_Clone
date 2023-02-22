@@ -47,6 +47,7 @@ module.exports = {
 				'dyna':'url("./assets/dyna.svg")',
 				'tommorow':'url("./assets/tommorow.svg")',
 				'contact':'url("./assets/contact.svg")',
+				'footer':'url("./assets/footer.png")',
 			  }
 			
 		},
