@@ -4,21 +4,26 @@ import { Link } from "react-router-dom";
 import appstore from "../../assets/Portfolpage/appstore.svg";
 import gpay from "../../assets/Portfolpage/gpay.svg";
 import star from "../../assets/Portfolpage/star.svg";
+import para from "../../assets/Portfolpage/para.svg";
+import ideal from '../../assets/Portfolpage/ideal-last.jpg';
+import alpha from '../../assets/Portfolpage/alpha-match-last.jpg';
+import wsps from '../../assets/Portfolpage/wsps-last.jpg';
+
 export default function Portfolio() {
   return (
     <>
       <main>
         <section className="w-screen h-full">
           <div className="flex items-center justify-center w-full h-full">
-            <div className="flex items-center justify-center w-full flex-col gap-4 p-2 mt-20 sm:p-4">
-              <div className="flex items-center justify-start w-full my-6 p-4">
+            <div className="flex items-center justify-center w-full flex-col gap-4  mt-20 sm:p-4">
+              <div className="flex items-center justify-start w-full my-4 p-4">
                 <h1 className="text-4xl font-bold">Portfolio</h1>
                 <div className="flex items-center justify-center gap-2 p-2">
                   <img src={heart} alt="heart" />
                 </div>
               </div>
               <div className="flex items-center w-full h-full justify-center flex-row gap-4">
-                <div className="flex flex-col items-start p-6 justify-start gap-4 w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediummind bg-smallmind bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
+                <div className="flex flex-col items-start p-6 justify-start gap-4 w-full sm:w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediummind bg-smallmind bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
                   <div className="flex items-center justify-start">
                     <h1 className="text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem] text-white">
                       Mindset
@@ -96,7 +101,7 @@ export default function Portfolio() {
           </div>
         </section>
         <section className="w-screen h-full">
-            <div className="flex items-center justify-center w-full flex-col gap-4 p-2 sm:p-4">
+            <div className="flex items-center justify-center w-full flex-col gap-4 mt-4 sm:p-4">
         <div className="flex items-center w-full h-full justify-center flex-row gap-4">
                 
                 <div className="hidden md:flex flex-col items-center p-2 justify-center gap-4 w-[25%] md:bg-lgriyadh bg-no-repeat bg-cover h-[80vh] bg-center">
@@ -113,8 +118,8 @@ export default function Portfolio() {
                          </div>
                      </div>
                 </div>
-                <div className="flex flex-col items-start p-6 justify-start gap-4 w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediumriyadh bg-smallriyadh bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
-                  <div className="flex items-start justify-start flex-row gap-2">
+                <div className="flex flex-col items-start p-6 justify-start gap-4 w-full sm:w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediumriyadh bg-smallriyadh bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
+                  <div className="flex items-start justify-start flex-row gap-4">
                   <h2 className="text-base  text-gray-400">
                     #07 | 
                   </h2>
@@ -126,7 +131,7 @@ export default function Portfolio() {
                     </h1>
                   </div>
                   <div className="flex items-start justify-center w-full sm:w-[40%] flex-1">
-                    <p className="font-medium text-[#a0a1a3] leading-normal md:leading-[1.5rem] text-xs sm:text-base">
+                    <p className="font-medium text-white leading-normal md:leading-[1.5rem] text-xs sm:text-base">
                     AppStudio designed an all-inclusive app to capture the magic of Riyadh Season, a go-to platform to explore all the exhilarating events and magical zones.
                     </p>
                   </div>
@@ -152,8 +157,48 @@ export default function Portfolio() {
               </div>
               </div>
         </section>
-        <section>
-            
+        <section className="w-screen h-full">
+              <div className="flex items-center justify-center gap-2 flex-row w-full">
+                <div className="flex items-center justify-center gap-6 flex-col w-full p-4">
+                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl p-4">
+                        <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
+                            <img src={para} alt="para"/>
+                        </div>
+                        <div className="flex items-center justify-center p-2 w-full md:w-[70%]">
+                            <p className="font-semibold text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl">AppStudio allocated a dedicated team to assist us with the smooth execution of the app, user interface, graphics and basically everything that sufficed the digital needs of General Entertainment Authority(GEA).</p>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl  p-6 bg-tech bg-no-repeat bg-cover bg-center">
+                        
+                        <div className="flex items-center justify-center p-2 w-full md:w-[70%] flex-col">
+                          <div className="flex items-center justify-center p-2 w-full"><h1 className="font-semibold text-white leading-normal md:leading-[1.5rem] text-xs sm:text-xl">Take advantage of our wide range of app development services!</h1></div>
+                          <div className="flex items-center justify-center p-2 w-full"><p className="font-normal text-white leading-normal  text-xs sm:text-base">Get onboard with us to gain 10X conversions with our bespoke custom app development services.</p></div>
+                        </div>
+                        <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
+                            <button className="bg-[#8873ef] p-3 text-sm text-white">Talk to our techies!</button>
+                        </div>
+                    </div>
+                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl">
+                        <div className="flex items-center justify-center p-2 w-full flex-col">
+                          <div className="flex items-center justify-start p-2 w-full"><h1 className="font-medium text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl p-2">Looking for More Case Studies?</h1></div>
+                          <div className="flex items-center justify-center p-2 w-full gap-6 md:flex-row flex-col">
+                            <div className="flex items-center justify-center p-2 w-full">
+                                <img src={ideal} alt="ideal" />
+                            </div>
+                            <div className="flex items-center justify-center p-2 w-full">
+                            <img src={alpha} alt="alpha" />
+                            </div>
+                            <div className="flex items-center justify-center p-2 w-full">
+                            <img src={wsps} alt="wspa" />
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </section>
+        <section className="w-screen h-screen">
+
         </section>
       </main>
     </>
