@@ -48,6 +48,12 @@ module.exports = {
 				'tommorow':'url("./assets/tommorow.svg")',
 				'contact':'url("./assets/contact.svg")',
 				'footer':'url("./assets/footer.png")',
+				'mediummind':'url("./assets/Portfolpage/md-mindset.jpg")',
+				'smallmind':'url("./assets/Portfolpage/sm-mindset.jpg")',
+				'lgmind':'url("./assets/Portfolpage/lg-mindset-app.jpg")',
+				'mediumriyadh':'url("./assets/Portfolpage/md-riyadh.jpg")',
+				'smallriyadh':'url("./assets/Portfolpage/sm-riyadh.jpg")',
+				'lgriyadh':'url("./assets/Portfolpage/lg-riyadh-app.jpg")',
 			  }
 			
 		},
