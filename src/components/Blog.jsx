@@ -1,10 +1,8 @@
 import React from 'react'
-import appdev from '../assets/blog/appdev.jpg';
-import fitness from '../assets/blog/fitness.png';
-import openai from '../assets/blog/openai.jpg';
+
 import arrow from "../assets/arrowright.svg";
 
-export default function Blog() {
+export default function Blog({img1,heading1,para1,img2,heading2,para2,img3,heading3,para3}) {
   return (
     <section className="w-screen h-full">
     <div className="flex items-center justify-center gap-4 p-2">
@@ -31,13 +29,13 @@ export default function Blog() {
               
               <div className="items-start justify-center grid-cols-1 gap-1 flex flex-col p-4 sm:mb-24">
               <div className="flex items-center justify-center gap-4 p-2 w-[90%]">
-                  <img src={appdev} alt="appdev" className="w-full sm:w-[50%] md:w-[90%] lg:w-[60%] rounded-lg"/>
+                  <img src={img1} alt="appdev" className="w-full sm:w-[50%] md:w-[90%] lg:w-[60%] rounded-lg"/>
                 </div>
                 <div className="flex items-center justify-center gap-4 p-2">
-                  <h5 className="text-xl font-medium xl:leading-normal">How Does MyFitnessPal Work As Canada’s Most Popular Fitness App?</h5>
+                  <h5 className="text-xl font-medium xl:leading-normal">{heading1}</h5>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
-                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">“The sweat is the footprints towards a better you!” This random quote on workout is likely to motivate.</p>
+                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">{para1}</p>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
                   <button className="text-xs font-normal xl:leading-normal">Read More</button>
@@ -46,13 +44,13 @@ export default function Blog() {
               </div>
               <div className="items-start justify-center grid-cols-1 gap-1 flex flex-col p-4">
                 <div className="flex items-center justify-center gap-4 p-2 w-[90%]">
-                  <img src={openai} alt="openai" className="w-full sm:w-[50%] md:w-[90%] lg:w-[50%] rounded-lg" />
+                  <img src={img2} alt="openai" className="w-full sm:w-[50%] md:w-[90%] lg:w-[50%] rounded-lg" />
                 </div>
                 <div className="flex items-center justify-center gap-4 p-2">
-                  <h5 className="text-xl font-medium leading-normal">What Is ChatGPT & How Does It Work? Is There Any Practical Use Of ChatGPT?</h5>
+                  <h5 className="text-xl font-medium leading-normal">{heading2}</h5>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
-                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">Imagine a personal assistant who never takes leaves, is always available to serve you, and has instant.</p>
+                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">{para2}</p>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
                   <button className="text-xs font-normal xl:leading-normal">Read More</button>
@@ -61,13 +59,13 @@ export default function Blog() {
               </div>
               <div className="items-start justify-center grid-cols-1 gap-1 flex flex-col p-4">
               <div className="flex items-center justify-center gap-4 p-2 w-[90%]">
-                  <img src={fitness} alt="fitness" className="w-full sm:w-[50%] md:w-[90%] lg:w-[50%] rounded-lg" />
+                  <img src={img3} alt="fitness" className="w-full sm:w-[50%] md:w-[90%] lg:w-[50%] rounded-lg" />
                 </div>
                 <div className="flex items-center justify-center gap-4 p-2">
-                  <h5 className="text-xl font-medium xl:leading-normal">How is IoMT Revolutionizing the Healthcare Industry?</h5>
+                  <h5 className="text-xl font-medium xl:leading-normal">{heading3}</h5>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
-                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">Amongst the technological disruption in several vital industries, Healthcare is the one that has the.</p>
+                  <p className="text-base font-normal xl:leading-normal text-[#828fad]">{para3}</p>
                 </div>
                 <div className="flex items-center justify-start gap-4 p-2">
                   <button className="text-xs font-normal xl:leading-normal">Read More</button>

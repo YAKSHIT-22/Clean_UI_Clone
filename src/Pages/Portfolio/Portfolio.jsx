@@ -5,9 +5,18 @@ import appstore from "../../assets/Portfolpage/appstore.svg";
 import gpay from "../../assets/Portfolpage/gpay.svg";
 import star from "../../assets/Portfolpage/star.svg";
 import para from "../../assets/Portfolpage/para.svg";
-import ideal from '../../assets/Portfolpage/ideal-last.jpg';
-import alpha from '../../assets/Portfolpage/alpha-match-last.jpg';
-import wsps from '../../assets/Portfolpage/wsps-last.jpg';
+import ideal from "../../assets/Portfolpage/ideal-last.jpg";
+import alpha from "../../assets/Portfolpage/alpha-match-last.jpg";
+import wsps from "../../assets/Portfolpage/wsps-last.jpg";
+import androidver from '../../assets/Portfolpage/android-ver.png';
+import react from '../../assets/Portfolpage/react.png';
+import MobileDev from "../../components/MobileDev";
+import Nominee from "../../components/Nominee";
+import Blog from "../../components/Blog";
+import Contact from "../../components/Contact";
+import facebook from '../../assets/Portfolpage/facebook.jpg';
+import wordpress from '../../assets/Portfolpage/wordpress.jpg';
+import google from '../../assets/Portfolpage/google.jpg';
 
 export default function Portfolio() {
   return (
@@ -61,145 +70,205 @@ export default function Portfolio() {
                   </Link>
 
                   <div className="flex items-start flex-col justify-end gap-2 flex-1">
-                     <div className="flex items-center justify-center ">
-                        <h1 className="text-white text-sm font-bold">Download Now:</h1>
-                     </div>
-                     <div className="flex items-center justify-start flex-row gap-4">
-                        <div className="flex items-center justify-center bg-white rounded-md">
-                            <Link to="/" className="flex items-center justify-center gap-2 flex-row w-full text-black">
-                                <img src={appstore} alt="appstore" />
-                                </Link>
-                            </div>
-                        <div className="flex items-center justify-center bg-white rounded-md">
-                            <Link to="/" className="flex items-center justify-center gap-2 flex-row w-full text-black">
-                                <img src={gpay} alt="gpay" />
-                                </Link>
-                            </div>
-                     </div>
+                    <div className="flex items-center justify-center ">
+                      <h1 className="text-white text-sm font-bold">
+                        Download Now:
+                      </h1>
+                    </div>
+                    <div className="flex items-center justify-start flex-row gap-4">
+                      <div className="flex items-center justify-center bg-white rounded-md">
+                        <Link
+                          to="/"
+                          className="flex items-center justify-center gap-2 flex-row w-full text-black"
+                        >
+                          <img src={appstore} alt="appstore" />
+                        </Link>
+                      </div>
+                      <div className="flex items-center justify-center bg-white rounded-md">
+                        <Link
+                          to="/"
+                          className="flex items-center justify-center gap-2 flex-row w-full text-black"
+                        >
+                          <img src={gpay} alt="gpay" />
+                        </Link>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="hidden md:flex flex-col items-center p-2 justify-center gap-4 w-[25%] md:bg-lgmind bg-no-repeat bg-cover h-[80vh] bg-center">
-                     <div className="flex-1 items-start justify-start gap-2 p-2 flex">
-                         <div className="flex items-center justify-center gap-4 flex-col">
-                           <div className="flex items-center justify-center gap-2 "><h1 className="text-2xl xl:text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">4.9</h1>
-                          <div className="flex items-center justify-center gap-1"> <img src={star} alt="star" />
-                           <img src={star} alt="star" />
-                           <img src={star} alt="star" />
-                           <img src={star} alt="star" />
-                           <img src={star} alt="star" /></div>
-                           </div>
-                           <p className="text-white text-sm font-medium">App Store Ratings</p>
-                           <div className="flex items-center justify-center gap-2 flex-col w-full">
-                            <h1 className="text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">500K+</h1>
-                            <p className="text-white text-sm font-medium">Downloads</p>
-                           </div>
-                         </div>
-                     </div>
+                  <div className="flex-1 items-start justify-start gap-2 p-2 flex">
+                    <div className="flex items-center justify-center gap-4 flex-col">
+                      <div className="flex items-center justify-center gap-2 ">
+                        <h1 className="text-2xl xl:text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">
+                          4.9
+                        </h1>
+                        <div className="flex items-center justify-center gap-1">
+                          {" "}
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                          <img src={star} alt="star" />
+                        </div>
+                      </div>
+                      <p className="text-white text-sm font-medium">
+                        App Store Ratings
+                      </p>
+                      <div className="flex items-center justify-center gap-2 flex-col w-full">
+                        <h1 className="text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">
+                          500K+
+                        </h1>
+                        <p className="text-white text-sm font-medium">
+                          Downloads
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         <section className="w-screen h-full">
-            <div className="flex items-center justify-center w-full flex-col gap-4 mt-4 sm:p-4">
-        <div className="flex items-center w-full h-full justify-center flex-row gap-4">
-                
-                <div className="hidden md:flex flex-col items-center p-2 justify-center gap-4 w-[25%] md:bg-lgriyadh bg-no-repeat bg-cover h-[80vh] bg-center">
-                     <div className="flex-1 items-start justify-start gap-2 p-2 flex">
-                         <div className="flex items-center justify-center gap-4 flex-col">
-                           <div className="flex items-center justify-center gap-2 "><h1 className="text-2xl xl:text-4xl font-bold xl:leading-[3.6rem] text-white">5M+</h1>
-                           <p className="text-white text-sm font-medium">Downloads</p>
-                           </div>
-                          
-                           <div className="flex items-center justify-center gap-2 flex-col w-full">
-                            <h1 className="text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">1M+</h1>
-                            <p className="text-white text-sm font-medium">Active Users</p>
-                           </div>
-                         </div>
-                     </div>
+          <div className="flex items-center justify-center w-full flex-col gap-4 mt-4 sm:p-4">
+            <div className="flex items-center w-full h-full justify-center flex-row gap-4">
+              <div className="hidden md:flex flex-col items-center p-2 justify-center gap-4 w-[25%] md:bg-lgriyadh bg-no-repeat bg-cover h-[80vh] bg-center">
+                <div className="flex-1 items-start justify-start gap-2 p-2 flex">
+                  <div className="flex items-center justify-center gap-4 flex-col">
+                    <div className="flex items-center justify-center gap-2 ">
+                      <h1 className="text-2xl xl:text-4xl font-bold xl:leading-[3.6rem] text-white">
+                        5M+
+                      </h1>
+                      <p className="text-white text-sm font-medium">
+                        Downloads
+                      </p>
+                    </div>
+
+                    <div className="flex items-center justify-center gap-2 flex-col w-full">
+                      <h1 className="text-4xl font-bold xl:leading-[3.6rem] text-[#FF9F0A]">
+                        1M+
+                      </h1>
+                      <p className="text-white text-sm font-medium">
+                        Active Users
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex flex-col items-start p-6 justify-start gap-4 w-full sm:w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediumriyadh bg-smallriyadh bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
-                  <div className="flex items-start justify-start flex-row gap-4">
-                  <h2 className="text-base  text-gray-400">
-                    #07 | 
-                  </h2>
-                  <span className="text-[.5rem] text-gray-400">Rank in the AR Category<br/> on the App Store</span>  
-                  </div>  
-                  <div className="flex items-end justify-start flex-1">
-                    <h1 className="text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem] text-white">
+              </div>
+              <div className="flex flex-col items-start p-6 justify-start gap-4 w-full sm:w-[90%] py-12 md:py-6 md:w-[75%] md:bg-mediumriyadh bg-smallriyadh bg-no-repeat h-full md:h-[80vh] bg-center bg-cover">
+                <div className="flex items-start justify-start flex-row gap-4">
+                  <h2 className="text-base  text-gray-400">#07 |</h2>
+                  <span className="text-[.5rem] text-gray-400">
+                    Rank in the AR Category
+                    <br /> on the App Store
+                  </span>
+                </div>
+                <div className="flex items-end justify-start flex-1">
+                  <h1 className="text-3xl lg:text-4xl xl:text-[3rem] font-bold xl:leading-[3.6rem] text-white">
                     Riyadh Season
+                  </h1>
+                </div>
+                <div className="flex items-start justify-center w-full sm:w-[40%] flex-1">
+                  <p className="font-medium text-white leading-normal md:leading-[1.5rem] text-xs sm:text-base">
+                    AppStudio designed an all-inclusive app to capture the magic
+                    of Riyadh Season, a go-to platform to explore all the
+                    exhilarating events and magical zones.
+                  </p>
+                </div>
+
+                <div className="flex items-start flex-col justify-end gap-2 flex-1">
+                  <div className="flex items-center justify-center ">
+                    <h1 className="text-white text-sm font-bold">
+                      Download Now:
                     </h1>
                   </div>
-                  <div className="flex items-start justify-center w-full sm:w-[40%] flex-1">
-                    <p className="font-medium text-white leading-normal md:leading-[1.5rem] text-xs sm:text-base">
-                    AppStudio designed an all-inclusive app to capture the magic of Riyadh Season, a go-to platform to explore all the exhilarating events and magical zones.
-                    </p>
-                  </div>
-                  
-                  <div className="flex items-start flex-col justify-end gap-2 flex-1">
-                     <div className="flex items-center justify-center ">
-                        <h1 className="text-white text-sm font-bold">Download Now:</h1>
-                     </div>
-                     <div className="flex items-center justify-start flex-row gap-4">
-                        <div className="flex items-center justify-center bg-white rounded-md">
-                            <Link to="/" className="flex items-center justify-center gap-2 flex-row w-full text-black">
-                                <img src={appstore} alt="appstore" />
-                                </Link>
-                            </div>
-                        <div className="flex items-center justify-center bg-white rounded-md">
-                            <Link to="/" className="flex items-center justify-center gap-2 flex-row w-full text-black">
-                                <img src={gpay} alt="gpay" />
-                                </Link>
-                            </div>
-                     </div>
+                  <div className="flex items-center justify-start flex-row gap-4">
+                    <div className="flex items-center justify-center bg-white rounded-md">
+                      <Link
+                        to="/"
+                        className="flex items-center justify-center gap-2 flex-row w-full text-black"
+                      >
+                        <img src={appstore} alt="appstore" />
+                      </Link>
+                    </div>
+                    <div className="flex items-center justify-center bg-white rounded-md">
+                      <Link
+                        to="/"
+                        className="flex items-center justify-center gap-2 flex-row w-full text-black"
+                      >
+                        <img src={gpay} alt="gpay" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
+          </div>
         </section>
         <section className="w-screen h-full">
-              <div className="flex items-center justify-center gap-2 flex-row w-full">
-                <div className="flex items-center justify-center gap-6 flex-col w-full p-4">
-                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl p-4">
-                        <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
-                            <img src={para} alt="para"/>
-                        </div>
-                        <div className="flex items-center justify-center p-2 w-full md:w-[70%]">
-                            <p className="font-semibold text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl">AppStudio allocated a dedicated team to assist us with the smooth execution of the app, user interface, graphics and basically everything that sufficed the digital needs of General Entertainment Authority(GEA).</p>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl  p-6 bg-tech bg-no-repeat bg-cover bg-center">
-                        
-                        <div className="flex items-center justify-center p-2 w-full md:w-[70%] flex-col">
-                          <div className="flex items-center justify-center p-2 w-full"><h1 className="font-semibold text-white leading-normal md:leading-[1.5rem] text-xs sm:text-xl">Take advantage of our wide range of app development services!</h1></div>
-                          <div className="flex items-center justify-center p-2 w-full"><p className="font-normal text-white leading-normal  text-xs sm:text-base">Get onboard with us to gain 10X conversions with our bespoke custom app development services.</p></div>
-                        </div>
-                        <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
-                            <button className="bg-[#8873ef] p-3 text-sm text-white">Talk to our techies!</button>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl">
-                        <div className="flex items-center justify-center p-2 w-full flex-col">
-                          <div className="flex items-center justify-start p-2 w-full"><h1 className="font-medium text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl p-2">Looking for More Case Studies?</h1></div>
-                          <div className="flex items-center justify-center p-2 w-full gap-6 md:flex-row flex-col">
-                            <div className="flex items-center justify-center p-2 w-full">
-                                <img src={ideal} alt="ideal" />
-                            </div>
-                            <div className="flex items-center justify-center p-2 w-full">
-                            <img src={alpha} alt="alpha" />
-                            </div>
-                            <div className="flex items-center justify-center p-2 w-full">
-                            <img src={wsps} alt="wspa" />
-                            </div>
-                          </div>
-                        </div>
-                    </div>
+          <div className="flex items-center justify-center gap-2 flex-row w-full">
+            <div className="flex items-center justify-center gap-6 flex-col w-full p-4">
+              <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl p-4">
+                <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
+                  <img src={para} alt="para" />
+                </div>
+                <div className="flex items-center justify-center p-2 w-full md:w-[70%]">
+                  <p className="font-semibold text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl">
+                    AppStudio allocated a dedicated team to assist us with the
+                    smooth execution of the app, user interface, graphics and
+                    basically everything that sufficed the digital needs of
+                    General Entertainment Authority(GEA).
+                  </p>
                 </div>
               </div>
+              <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl  p-6 bg-tech bg-no-repeat bg-cover bg-center">
+                <div className="flex items-center justify-center p-2 w-full md:w-[70%] flex-col">
+                  <div className="flex items-center justify-center p-2 w-full">
+                    <h1 className="font-semibold text-white leading-normal md:leading-[1.5rem] text-xs sm:text-xl">
+                      Take advantage of our wide range of app development
+                      services!
+                    </h1>
+                  </div>
+                  <div className="flex items-center justify-center p-2 w-full">
+                    <p className="font-normal text-white leading-normal  text-xs sm:text-base">
+                      Get onboard with us to gain 10X conversions with our
+                      bespoke custom app development services.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center p-2 w-full md:w-[30%]">
+                  <button className="bg-[#8873ef] p-3 text-sm text-white">
+                    Talk to our techies!
+                  </button>
+                </div>
+              </div>
+              <div className="flex items-center justify-center gap-4 flex-col md:flex-row max-w-7xl">
+                <div className="flex items-center justify-center p-2 w-full flex-col">
+                  <div className="flex items-center justify-start p-2 w-full">
+                    <h1 className="font-medium text-gray-800 leading-normal md:leading-[1.5rem] text-xs sm:text-xl p-2">
+                      Looking for More Case Studies?
+                    </h1>
+                  </div>
+                  <div className="flex items-center justify-center p-2 w-full gap-6 md:flex-row flex-col">
+                    <div className="flex items-center justify-center p-2 w-full">
+                      <img src={ideal} alt="ideal" />
+                    </div>
+                    <div className="flex items-center justify-center p-2 w-full">
+                      <img src={alpha} alt="alpha" />
+                    </div>
+                    <div className="flex items-center justify-center p-2 w-full">
+                      <img src={wsps} alt="wspa" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section className="w-screen h-screen">
-
-        </section>
+        <MobileDev img1={androidver} img2={react} para1={"We elevate your android development strategy, offer end to end services and build next-gen Android apps."} para2={"We leverage the power of React Native tool to facilitate businesses to deliver a one-of-a-kind experience."} heading1={"Android App Development"} heading2={"React Native"}/>
+        <Nominee/>
+        <Blog img1={facebook} img2={wordpress} img3={google} heading1={"What’s the Buzz Around Facebook’s Metaverse?"} para1={"“Facebook has taken a step ahead to change its name to Meta. Facebook has already announced its plans"} heading2={"Step By Step Guide to Create Google Cloud Account"} para2={"A service account is a special type of Google account that helps users to authenticate and authorize."} heading3={"How Would I Create a WordPress Account?"} para3={"WordPress is one of the most popular and preferred content management systems to build a website."}/>
+        <Contact/>
       </main>
     </>
   );
