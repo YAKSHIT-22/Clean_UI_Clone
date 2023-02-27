@@ -112,11 +112,11 @@ export default function Blog() {
   },
 ]
   return (
-    <>
+    <main>
     <section className="w-screen h-full">
-      <div className="flex items-center justify-center md:p-4 lg:p-6 md:pt-6 mt-20 w-full">
+      <div className="flex items-center justify-center h-full w-full">
         
-             <div className="flex items-start justify-start flex-col lg:flex-row gap-2 p-2 w-full lg:max-w-6xl">
+             <div className="flex items-start justify-start flex-col lg:flex-row gap-2 p-2 w-full md:p-4 lg:p-6 md:pt-6 mt-20 lg:max-w-6xl">
                  <div className="flex items-center justify-center gap-3 p-2 w-full lg:w-[75%] flex-col">
                       <div className="md:flex hidden items-center justify-start gap-4 w-full p-2">
                         <div className="sm:flex hidden items-center justify-center transition-all p-2 rounded-xl bg-[#8878ef]"><p className="text-white p-1 text-sm lg:text-base">Blog</p></div>
@@ -163,6 +163,6 @@ export default function Blog() {
       </div>
     </section>
     <Contact/>
-    </>
+    </main>
   )
 }

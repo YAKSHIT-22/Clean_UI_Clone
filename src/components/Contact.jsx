@@ -26,7 +26,7 @@ export default function Contact() {
   return (
     <section className="w-screen h-full">
           <div className="flex items-center justify-center p-4 flex-col relative">
-          <div className="flex justify-center items-center my-4 p-3 bg-contact bg-no-repeat bg-center bg-cover rounded-lg max-w-6xl">
+          <div className="flex justify-center items-center my-4 p-3 bg-contact bg-no-repeat bg-center bg-cover rounded-2xl max-w-6xl">
             <div className="flex justify-center items-center flex-col md:flex-row my-8 p-6">
               <div className="flex md:w-1/2 w-full justify-center items-center flex-col text-white my-4 gap-2 p-4">
                 <div className="flex items-center justify-center p-2">
