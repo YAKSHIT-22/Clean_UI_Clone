@@ -1,6 +1,7 @@
 import React from 'react'
 import appdev from "../../assets/BlogPage/app-dev.jpg"
 import clock from '../../assets/BlogPage/clock.png'
+import Contact from '../../components/Contact'
 
 
 
@@ -111,6 +112,7 @@ export default function Blog() {
   },
 ]
   return (
+    <>
     <section className="w-screen h-full">
       <div className="flex items-center justify-center md:p-4 lg:p-6 md:pt-6 mt-20 w-full">
         
@@ -160,5 +162,7 @@ export default function Blog() {
              </div>
       </div>
     </section>
+    <Contact/>
+    </>
   )
 }
