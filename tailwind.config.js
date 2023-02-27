@@ -55,6 +55,7 @@ module.exports = {
 				'smallriyadh':'url("./assets/Portfolpage/sm-riyadh.jpg")',
 				'lgriyadh':'url("./assets/Portfolpage/lg-riyadh-app.jpg")',
 				'tech':'url("./assets/Portfolpage/tech.png")',
+				'ai':'url("./assets/Blog_Page/ai.svg")',
 			  }
 			
 		},
