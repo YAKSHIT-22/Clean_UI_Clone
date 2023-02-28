@@ -997,7 +997,6 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <Contact/>
       </main>
       
     </>
