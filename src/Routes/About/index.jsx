@@ -5,8 +5,7 @@ import FullCycleDevelopment from "./FullCycleDevelopment";
 export default function About() {
   return (
     <Routes>
-      <Route path="/our_company" element={<>our_company</>} />
-      <Route path="/how_we_works" element={<>how_we_works</>} />
+      <Route path="/our_company" element={<>our company</>} />
       <Route path="/agile_development" element={<>agile_development</>} />
       <Route path="/carers" element={<>carers</>} />
       <Route
